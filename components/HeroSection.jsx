@@ -11,22 +11,22 @@ export const HeroSection = () => {
           <div className='mx-auto px-0 py-24 md:flex items-center md:px-12 md:justify-between lg:px-48 lg:py-48'>
               <div>
                 <div className='flex items-center justify-center py-2 md:py-3 lg:py-4'>
-                  <h1 className='text-white text-xl mx-2 md:tex-2xl lg:text-4xl underline decoration-4 decoration-red-400'>
+                  <h1 className='text-white dark:text-gray-700 text-xl mx-2 md:tex-2xl lg:text-4xl underline decoration-4 decoration-red-400'>
                     Hi 
                   </h1>
                   <MdOutlineWavingHand className='w-6 h-6 mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle text-red-400 '/>
                 </div>
-                <h1 className='text-center text-white text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
+                <h1 className='text-center text-white dark:text-gray-700 text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
                   I'm <span className='text-red-400 font-bold'>HtooHtet</span>
                 </h1>
                 <div className='flex items-center justify-center md:justify-between space-x-5 py-2 lg:py-4'>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
                     <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3]'/>
-                    <p className='text-white md:text-lg lg:text-xl'>App developer</p>
+                    <p className='text-white dark:text-gray-700 md:text-lg lg:text-xl'>App developer</p>
                   </div>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
                     <FaFirefox className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3]'/>
-                    <p className='text-white md:text-lg lg:text-xl'>Web developer</p>
+                    <p className='text-white dark:text-gray-700 md:text-lg lg:text-xl'>Web developer</p>
                   </div>
                 </div>
               </div> 

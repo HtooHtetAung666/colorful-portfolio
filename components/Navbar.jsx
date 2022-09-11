@@ -1,14 +1,43 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import { WiAlien } from "react-icons/wi";
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";    
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi'
+import { useTheme } from 'next-themes';    
 
 export const Navbar = () => {
     const [nav,setNave] = useState(false);
+    const [mounted,setMounted] = useState(false);
+    
+    useEffect(()=>{
+        setMounted(true)
+    },[]);
     
     const handleNav = () => {
         setNave(!nav);
+    }
+
+    const {systemTheme,theme,setTheme} = useTheme();
+
+    const renderThemeChanger = () => {
+        if(!mounted) return null;
+
+        const currentTheme = theme === 'system' ? systemTheme : theme;
+        if(currentTheme === 'dark') {
+            return (
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-indigo-400' onClick={ () => setTheme('light') }>
+                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-indigo-400' />
+                </button>    
+            )
+        }
+        else {
+            return (
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-orange-300' onClick={ () => setTheme('dark') }>
+                    <HiOutlineMoon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-orange-300' />
+                </button>
+            )
+        }
     }
 
   return (
@@ -16,26 +45,30 @@ export const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <div className='text-orange-400 cursor-pointer'>
+            <div className='text-orange-300 dark:text-indigo-400 cursor-pointer'>
                 <WiAlien size={100} className='p-1'/>
             </div>
 
+            {/* Dark Mode Switcher */}
+            {renderThemeChanger()}
+
+            {/* Navigation */}
             <div>
                 <ul className='hidden md:flex p-4'>
                     <Link href="/#herosection">
-                        <li className='ml-10 text-md text-white uppercase'>Home</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Home</li>
                     </Link>
                     <Link href="/#hobbies">
-                        <li className='ml-10 text-md text-white uppercase'>Hobbies</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Hobbies</li>
                     </Link>
                     <Link href="/#skills">
-                        <li className='ml-10 text-md text-white uppercase'>Skills</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Skills</li>
                     </Link>
                     <Link href="/#projects">
-                        <li className='ml-10 text-md text-white uppercase'>Projects</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Projects</li>
                     </Link>
                     <Link href="/#contact">
-                        <li className='ml-10 text-md text-white uppercase'>Contact</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Contact</li>
                     </Link>
                 </ul>
                 <div className='md:hidden mr-5 text-[#1f2937] cursor-pointer' onClick={handleNav}>
