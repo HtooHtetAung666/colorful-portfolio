@@ -16,25 +16,25 @@ export const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <div className='text-orange-300 cursor-pointer'>
+            <div className='text-orange-400 cursor-pointer'>
                 <WiAlien size={100} className='p-1'/>
             </div>
 
             <div>
                 <ul className='hidden md:flex p-4'>
-                    <Link href="/">
+                    <Link href="/#herosection">
                         <li className='ml-10 text-md text-white uppercase'>Home</li>
                     </Link>
-                    <Link href="/">
+                    <Link href="/#hobbies">
                         <li className='ml-10 text-md text-white uppercase'>Hobbies</li>
                     </Link>
-                    <Link href="/">
+                    <Link href="/#skills">
                         <li className='ml-10 text-md text-white uppercase'>Skills</li>
                     </Link>
-                    <Link href="/">
+                    <Link href="/#projects">
                         <li className='ml-10 text-md text-white uppercase'>Projects</li>
                     </Link>
-                    <Link href="/">
+                    <Link href="/#contact">
                         <li className='ml-10 text-md text-white uppercase'>Contact</li>
                     </Link>
                 </ul>

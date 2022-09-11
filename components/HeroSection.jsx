@@ -7,8 +7,8 @@ import { FaFirefox } from "react-icons/fa";
 export const HeroSection = () => {
   return (
     <>
-      <div className='w-full h-full lg:h-screen text-center bg-gradient-to-r from-[#5651e5] to-[#a65fec]'>
-          <div className='mx-auto px-20 py-40 md:flex items-center md:justify-between lg:py-48 lg:px-48'>
+      <div id='herosection' className='w-full h-full lg:h-screen text-center bg-gradient-to-r from-[#5651e5] to-[#a65fec]'>
+          <div className='mx-auto px-0 py-24 md:flex items-center md:px-12 md:justify-between lg:px-48 lg:py-48'>
               <div>
                 <div className='flex items-center justify-center py-2 md:py-3 lg:py-4'>
                   <h1 className='text-white text-xl mx-2 md:tex-2xl lg:text-4xl underline decoration-4 decoration-red-400'>
@@ -19,13 +19,13 @@ export const HeroSection = () => {
                 <h1 className='text-center text-white text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
                   I'm <span className='text-red-400 font-bold'>HtooHtet</span>
                 </h1>
-                <div className='flex items-center justify-center md:justify-between space-x-1 py-2 md:space-x-3 lg:space-x-5 lg:py-4'>
+                <div className='flex items-center justify-center md:justify-between space-x-5 py-2 lg:py-4'>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
-                    <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6 text-red-400'/>
+                    <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3]'/>
                     <p className='text-white md:text-lg lg:text-xl'>App developer</p>
                   </div>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
-                    <FaFirefox className='w-5 h-5 md:w-6 md:h-6 text-red-400'/>
+                    <FaFirefox className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3]'/>
                     <p className='text-white md:text-lg lg:text-xl'>Web developer</p>
                   </div>
                 </div>

@@ -4,7 +4,7 @@ import { SiFlutter } from "react-icons/si";
 
 export const Skills = () => {
   return (
-    <div className='w-full h-full my-16 p-4 md:my-32 md:pt-32 lg:min-h-screen'>
+    <div id='skills' className='w-full h-full my-16 p-4 md:my-32 md:pt-32 lg:min-h-screen'>
         <div className='mx-auto flex flex-col justify-center'>
 
             <h1 className='text-center tracking-widest text-indigo-400 text-xl uppercase md:text-2xl lg:text-3xl'>Skills</h1>
