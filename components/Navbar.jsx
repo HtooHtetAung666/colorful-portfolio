@@ -12,27 +12,30 @@ export const Navbar = () => {
     }
 
   return (
-    <div className='fixed w-full h-20 shadow-lg z-[100] bg-gradient-to-r from-[#5651e5] to-[#a65fec] md:h-24'>
+    <div className='w-full h-16 bg-gradient-to-r from-[#5651e5] to-[#a65fec]'>
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
-            <div className='text-[#AB263A]'>
-                <WiAlien size={100}/>
+            
+            {/* logo */}
+            <div className='text-orange-300 cursor-pointer'>
+                <WiAlien size={100} className='p-1'/>
             </div>
+
             <div>
                 <ul className='hidden md:flex p-4'>
                     <Link href="/">
-                        <li className='ml-10 text-md text-[#ecf0f3] uppercase'>Home</li>
+                        <li className='ml-10 text-md text-white uppercase'>Home</li>
                     </Link>
                     <Link href="/">
-                        <li className='ml-10 text-md text-[#ecf0f3] uppercase'>Hobbies</li>
+                        <li className='ml-10 text-md text-white uppercase'>Hobbies</li>
                     </Link>
                     <Link href="/">
-                        <li className='ml-10 text-md text-[#ecf0f3] uppercase'>Skills</li>
+                        <li className='ml-10 text-md text-white uppercase'>Skills</li>
                     </Link>
                     <Link href="/">
-                        <li className='ml-10 text-md text-[#ecf0f3] uppercase'>Projects</li>
+                        <li className='ml-10 text-md text-white uppercase'>Projects</li>
                     </Link>
                     <Link href="/">
-                        <li className='ml-10 text-md text-[#ecf0f3] uppercase'>Contact</li>
+                        <li className='ml-10 text-md text-white uppercase'>Contact</li>
                     </Link>
                 </ul>
                 <div className='md:hidden mr-5 text-[#1f2937] cursor-pointer' onClick={handleNav}>
@@ -41,7 +44,8 @@ export const Navbar = () => {
             </div>
         </div>
 
-        <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/60' : ''}>
+        {/* Mobile Menu */}
+        <div className={nav ? 'md:hidden fixed z-[100] left-0 top-0 w-full h-screen bg-black/60' : ''}>
             <div className={
                 nav ? 'fixed left-0 top-0 w-[80%] h-screen bg-[#ecf0f3] py-5 px-6 ease-in duration-500'
                     : 'fixed left-[-100%] top-0 py-5 px-6  ease-in duration-500'                
