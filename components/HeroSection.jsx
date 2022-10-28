@@ -21,11 +21,11 @@ export const HeroSection = () => {
                 </h1>
                 <div className='flex items-center justify-center md:justify-between space-x-5 py-2 lg:py-4'>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
-                    <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3]'/>
+                    <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3] dark:text-gray-700'/>
                     <p className='text-white dark:text-gray-700 md:text-lg lg:text-xl'>App developer</p>
                   </div>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
-                    <FaFirefox className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3]'/>
+                    <FaFirefox className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3] dark:text-gray-700'/>
                     <p className='text-white dark:text-gray-700 md:text-lg lg:text-xl'>Web developer</p>
                   </div>
                 </div>

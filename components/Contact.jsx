@@ -3,7 +3,7 @@ import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 export const Contact = () => {
   return (
-    <div id='contact' className='w-full flex items-center justify-center my-20 px-16 md:min-h-screen'>
+    <div id='contact' className='w-full flex items-center justify-center my-40 px-16 md:my-20 md:min-h-screen'>
       <div className='relative w-full max-w-lg'>
         <div className='absolute bottom-0 -left-0 w-44 h-44 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob md:w-72 md:h-72 lg:w-80 lg:h-80'></div>
         <div className='absolute bottom-0 -right-0 w-44 h-44 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob animation-delay-2000 md:w-72 md:h-72 lg:w-80 lg:h-80'></div>
@@ -12,7 +12,7 @@ export const Contact = () => {
         <div className='relative space-y-4 md:m-7  lg:m-0'>
 
         <div className='p-5 bg-inherit rounded-lg flex items-center justify-center space-x-8 md:justify-between md:bg-[#ecf0f3]'>
-          <h1 className='text-purple-400 tracking-widest text-xl uppercase md:tracking-normal md:text-2xl lg:text-3xl'>Contact</h1>
+          <h1 className='text-purple-400 tracking-widest text-xl md:tracking-normal md:text-2xl lg:text-3xl'>Ways To Contact</h1>
           <div className='hidden w-40 h-6 rounded-lg bg-purple-300 md:block'></div>
         </div>
 

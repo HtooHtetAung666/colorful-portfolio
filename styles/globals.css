@@ -8,7 +8,7 @@ html {
 
 @layer base {
   body {
-    @apply p-0 m-0 bg-[#ecf0f3] tracking-wide;
+    @apply p-0 m-0 bg-[#e6e6fa] tracking-wide;
     @apply dark:bg-gray-800;
   }
   li {

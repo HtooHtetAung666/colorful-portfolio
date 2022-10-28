@@ -7,7 +7,7 @@ export const Skills = () => {
     <div id='skills' className='w-full h-full my-16 p-4 md:my-32 md:pt-32 lg:min-h-screen'>
         <div className='mx-auto flex flex-col justify-center'>
 
-            <h1 className='text-center tracking-widest text-indigo-400 dark:text-orange-300 text-xl uppercase md:text-2xl lg:text-3xl'>Skills</h1>
+            <h1 className='text-center tracking-widest dark:text-indigo-400 text-[#8cadd3] text-xl uppercase md:text-2xl lg:text-3xl'>Skills</h1>
 
             <ul className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-32 md:mx-16 lg:mx-32'>
 
