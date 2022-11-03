@@ -59,16 +59,16 @@ export const Navbar = () => {
             <div>
                 <ul className='hidden md:flex p-4'>
                     <Link href="/#hobbies">
-                        <li className='ml-10 text-md text-white dark:text-gray-800  uppercase'>Hobbies</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Hobbies</li>
                     </Link>
                     <Link href="/#skills">
-                        <li className='ml-10 text-md text-white dark:text-gray-800  uppercase'>Skills</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Skills</li>
                     </Link>
                     <Link href="/#projects">
-                        <li className='ml-10 text-md text-white dark:text-gray-800  uppercase'>Projects</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Projects</li>
                     </Link>
                     <Link href="/#contact">
-                        <li className='ml-10 text-md text-white dark:text-gray-800  uppercase'>Contact</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Contact</li>
                     </Link>
                 </ul>
                 <div className='md:hidden mr-5 text-[#1f2937] cursor-pointer' onClick={handleNav}>

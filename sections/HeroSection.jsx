@@ -2,6 +2,7 @@ import React from 'react'
 import { MdOutlineWavingHand } from "react-icons/md";
 import { AiOutlineMobile } from "react-icons/ai";
 import { FaFirefox } from "react-icons/fa";
+import TypeWriter from "typewriter-effect";
 
 export const HeroSection = () => {
   return (
@@ -15,8 +16,23 @@ export const HeroSection = () => {
                   </h1>
                   <MdOutlineWavingHand className='w-6 h-6 mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle text-red-400 '/>
                 </div>
-                <h1 className='text-center text-white dark:text-gray-700 text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
-                  I'm <span className='text-red-400 font-bold'>HtooHtet</span>
+                <h1 className='text-center text-red-400 font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
+                  <TypeWriter
+                    options={{
+                      loop: true,
+                    }}
+                    onInit={(typewriter)=>{
+                      typewriter
+                        .typeString("This is ")
+                        .pauseFor(1000)
+                        .typeString("Htoo Htet")
+                        .pauseFor(2000)
+                        .deleteAll()
+                        .typeString("I love to Code!!")
+                        .pauseFor(3000)
+                        .start();
+                    }}
+                  />
                 </h1>
                 <div className='flex items-center justify-center md:justify-between space-x-5 py-2 lg:py-4'>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
