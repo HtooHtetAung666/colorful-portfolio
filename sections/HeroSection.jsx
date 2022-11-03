@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { MdOutlineWavingHand } from "react-icons/md";
 import { AiOutlineMobile } from "react-icons/ai";
 import { FaFirefox } from "react-icons/fa";

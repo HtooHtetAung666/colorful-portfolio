@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import { HeroSection } from '../components/HeroSection'
-import Hobbies from '../components/Hobbies'
-import { Skills } from '../components/Skills'
-import { Projects } from '../components/Projects'
-import { Contact } from '../components/Contact'
+import { HeroSection } from '../sections/HeroSection'
+import Hobbies from '../sections/Hobbies'
+import { Skills } from '../sections/Skills'
+import { Projects } from '../sections/Projects'
+import { Contact } from '../sections/Contact'
 import { Footer } from '../components/Footer'
 
 export default function Home() {
