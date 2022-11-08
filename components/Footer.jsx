@@ -20,7 +20,7 @@ export const Footer = () => {
                </Link> 
             </div>
         </div>
-        <p class="text-center text-md text-white px-4 pt-3 pb-4 mt-2 md:pb-4 md:text-lg lg:pt-0">
+        <p className='text-center text-md text-white px-4 pt-3 pb-4 mt-2 md:pb-4 md:text-lg lg:pt-0'>
             Built with
             <Link href='https://nextjs.org/'>
                 <a target='_blank' className='inline-block rotate-2 bg-[#ecf0f3]/25 px-2 pt-1 mx-2 hover:rotate-0'>

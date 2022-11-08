@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 import chatBot from '../public/assets/projects/chatBot.jpg'
 import { ProjectItem } from '../components/ProjectItem'
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { WiAlien } from "react-icons/wi";
-import Link from 'next/link';
+import { Link } from 'react-scroll/modules';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi'
@@ -40,34 +40,37 @@ export const Navbar = () => {
         }
     }
 
+    // const WiAlien = React.forwardRef(function CustomComponent(props, ref) {
+    //     return (
+    //       <div/>
+    //     );
+    // });
+
   return (
     <div className='w-full h-16 bg-gradient-to-r from-[#5651e5] to-[#a65fec]'>
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <Link href='/'>
-                <div className='text-pink-300 dark:text-indigo-400 cursor-pointer'>
-                    <WiAlien size={100} className='p-1'/>
-                </div>
-            </Link>
-            
-
+            <div className='text-pink-300 dark:text-indigo-400 cursor-pointer'>
+                <WiAlien size={100} className='p-1'/>
+            </div>
+                
             {/* Dark Mode Switcher */}
             {renderThemeChanger()}
 
             {/* Navigation */}
             <div>
                 <ul className='hidden md:flex p-4'>
-                    <Link href="/#hobbies">
+                    <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Hobbies</li>
                     </Link>
-                    <Link href="/#skills">
+                    <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Skills</li>
                     </Link>
-                    <Link href="/#projects">
+                    <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Projects</li>
                     </Link>
-                    <Link href="/#contact">
+                    <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Contact</li>
                     </Link>
                 </ul>
@@ -85,9 +88,9 @@ export const Navbar = () => {
             }>
                 <div>
                     <div className='flex w-full items-center justify-between'>
-                        <Link href='/'>
-                            <WiAlien size={100} className='text-gray-900'/>
-                        </Link>
+                        <div className='text-gray-900'>
+                            <WiAlien size={100}/>
+                        </div>   
                         <div className='rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer' onClick={handleNav}>
                             <AiOutlineClose size={25} className='text-gray-900'/>
                         </div>
@@ -98,16 +101,16 @@ export const Navbar = () => {
                 </div>
                 <div className='py-4 flex-col'>
                     <ul> 
-                        <Link href="/#hobbies">
+                        <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Hobbies</li>
                         </Link> 
-                        <Link href="/#skills">
+                        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Skills</li>
                         </Link> 
-                        <Link href="/#projects">
+                        <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Projects</li>
                         </Link> 
-                        <Link href="/#contact">
+                        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Contact</li>
                         </Link> 
                     </ul>
