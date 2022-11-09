@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { WiAlien } from "react-icons/wi";
 import { Link } from 'react-scroll/modules';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi'
 import { useTheme } from 'next-themes';    
 
@@ -33,8 +32,8 @@ export const Navbar = () => {
         }
         else {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-pink-300' onClick={ () => setTheme('dark') }>
-                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-pink-300' />
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-pink-400' onClick={ () => setTheme('dark') }>
+                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-pink-400' />
                 </button>
             )
         }
@@ -51,7 +50,7 @@ export const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <div className='text-pink-300 dark:text-indigo-400 cursor-pointer'>
+            <div className='text-pink-400 dark:text-indigo-400 cursor-pointer'>
                 <WiAlien size={100} className='p-1'/>
             </div>
                 
@@ -60,7 +59,7 @@ export const Navbar = () => {
 
             {/* Navigation */}
             <div>
-                <ul className='hidden md:flex p-4'>
+                <ul className='hidden md:flex md:p-2 lg:p-4'>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Hobbies</li>
                     </Link>
@@ -114,9 +113,9 @@ export const Navbar = () => {
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Contact</li>
                         </Link> 
                     </ul>
-                    <div className='pt-14'>
-                        <p className='uppercase tracking-widest text-purple-700 text-center'>Find me on</p>
-                        <div className='flex items-center justify-between px-8 py-6 w-full sm:w-[80%]'>
+                    <div className='mt-10 pt-14'>
+                        <p className='text-purple-700 text-center'>&copy; Copyright 2022 htoohtet</p>
+                        {/* <div className='flex items-center justify-between px-8 py-6 w-full sm:w-[80%]'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in druation-300'>
                                 <FaLinkedinIn className='text-gray-900' />
                             </div>
@@ -126,7 +125,7 @@ export const Navbar = () => {
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in druation-300'>
                                 <AiOutlineMail className='text-gray-900' />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
