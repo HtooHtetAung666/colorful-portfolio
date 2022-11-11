@@ -11,19 +11,19 @@ export const HeroSection = () => {
           <div className='mx-auto px-0 py-24 md:flex items-center md:px-12 md:justify-between lg:px-48 lg:py-48'>
               <div>
                 <div className='flex items-center justify-center py-2 md:py-3 lg:py-4'>
-                  <h1 className='text-white dark:text-gray-700 text-xl mx-2 md:tex-2xl lg:text-4xl underline decoration-4 decoration-red-400'>
+                  <h1 className='text-white dark:text-gray-700 text-xl mx-2 md:tex-2xl lg:text-4xl underline decoration-4 decoration-[#483d8b]'>
                     Hi 
                   </h1>
-                  <MdOutlineWavingHand className='w-6 h-6 mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle text-red-400 '/>
+                  <MdOutlineWavingHand className='w-6 h-6 mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle text-[#483d8b]'/>
                 </div>
-                <h1 className='text-center text-red-400 font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
+                <h1 className='text-center text-[#483d8b] font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
                   <TypeWriter
                     options={{
                       loop: true,
                     }}
                     onInit={(typewriter)=>{
                       typewriter
-                        .typeString("This is ")
+                        .typeString("I'm ")
                         .pauseFor(1000)
                         .typeString("Htoo Htet")
                         .pauseFor(2000)
