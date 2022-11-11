@@ -25,15 +25,15 @@ export const Navbar = () => {
         const currentTheme = theme === 'system' ? systemTheme : theme;
         if(currentTheme === 'dark') {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-indigo-400' onClick={ () => setTheme('light') }>
-                    <HiOutlineMoon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-indigo-400' />
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-gray-700' onClick={ () => setTheme('light') }>
+                    <HiOutlineMoon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-gray-700' />
                 </button>    
             )
         }
         else {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-pink-400' onClick={ () => setTheme('dark') }>
-                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-pink-400' />
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-[#e6e6fa]' onClick={ () => setTheme('dark') }>
+                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-[#e6e6fa]' />
                 </button>
             )
         }
@@ -50,7 +50,7 @@ export const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <div className='text-pink-400 dark:text-indigo-400 cursor-pointer'>
+            <div className='text-indigo-300 cursor-pointer'>
                 <WiAlien size={100} className='p-1'/>
             </div>
                 
