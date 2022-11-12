@@ -32,8 +32,8 @@ export const Navbar = () => {
         }
         else {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-orange-400' onClick={ () => setTheme('dark') }>
-                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-orange-400' />
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-orange-300' onClick={ () => setTheme('dark') }>
+                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-orange-300' />
                 </button>
             )
         }
@@ -50,7 +50,7 @@ export const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <div className='text-indigo-300 cursor-pointer'>
+            <div className='text-indigo-300'>
                 <WiAlien size={100} className='p-1'/>
             </div>
                 
@@ -73,7 +73,7 @@ export const Navbar = () => {
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Contact</li>
                     </Link>
                 </ul>
-                <div className='md:hidden mr-5 text-[#1f2937] cursor-pointer' onClick={handleNav}>
+                <div className='md:hidden mr-5 text-[#1f2937]' onClick={handleNav}>
                     <AiOutlineMenu size={25} />
                 </div>
             </div>
