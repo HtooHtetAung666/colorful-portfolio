@@ -25,15 +25,15 @@ export const Navbar = () => {
         const currentTheme = theme === 'system' ? systemTheme : theme;
         if(currentTheme === 'dark') {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-[#483d8b]' onClick={ () => setTheme('light') }>
-                    <HiOutlineMoon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-[#483d8b]' />
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-[#553e8c]' onClick={ () => setTheme('light') }>
+                    <HiOutlineMoon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-[#553e8c]' />
                 </button>    
             )
         }
         else {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-orange-300' onClick={ () => setTheme('dark') }>
-                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-orange-300' />
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-[#ffaa33]' onClick={ () => setTheme('dark') }>
+                    <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-[#ffaa33]' />
                 </button>
             )
         }
