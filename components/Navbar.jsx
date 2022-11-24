@@ -80,10 +80,10 @@ export const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={nav ? 'md:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-black/60' : ''}>
+        <div className={nav ? 'md:hidden fixed z-[100] left-0 top-0 w-full min- h-screen bg-black/60' : ''}>
             <div className={
                 nav ? 'fixed left-0 top-0 w-[80%] h-screen bg-[#ecf0f3] py-5 px-6 ease-in duration-500'
-                    : 'fixed left-[-100%] top-0 py-5 px-6  ease-in duration-500'                
+                    : 'fixed left-[-100%] top-0 py-5 px-6 ease-in duration-500'                
             }>
                 <div>
                     <div className='flex w-full items-center justify-between'>
