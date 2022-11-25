@@ -6,7 +6,7 @@ import { FaMusic } from "react-icons/fa";
 const Hobbies = () => {
   return (
     <div className='relative'>
-        <div id='hobbies' className='w-full h-full mt-28 mb-16 p-4 md:my-32 md:pt-32 lg:min-h-screen'>
+        <div id='hobbies' className='w-full h-full my-28 p-4 md:my-32 md:pt-32 lg:min-h-screen'>
 
             <svg 
             className='absolute top-0 left-0 w-40 h-24 -mt-12 md:w-60 md:h-32 md:-mt-0 lg:ml-20 lg:w-80 lg:h-44'
