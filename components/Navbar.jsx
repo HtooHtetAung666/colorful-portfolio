@@ -50,7 +50,7 @@ export const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <div className='text-indigo-300'>
+            <div className='text-purple-400'>
                 <WiAlien size={100} className='p-1'/>
             </div>
                 

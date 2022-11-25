@@ -11,12 +11,12 @@ export const HeroSection = () => {
           <div className='px-0 pt-16 pb-8 md:flex items-center md:px-12 md:pt-20 md:pb-10 md:justify-between lg:px-44 lg:p-36'>
               <div>
                 <div className='flex items-center justify-center py-2 md:py-3 lg:py-4'>
-                  <h1 className='text-white dark:text-gray-700 text-xl mx-2 md:text-2xl lg:text-4xl underline decoration-4 decoration-[#ffaa33] dark:decoration-[#553e8c] '>
+                  <h1 className='text-black text-xl mx-2 md:text-2xl lg:text-4xl underline decoration-4 decoration-[#ffaa33] dark:decoration-[#553e8c] '>
                     Hi 
                   </h1>
-                  <MdOutlineWavingHand className='w-6 h-6 mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle text-[#ffaa33] dark:text-[#483d8b]'/>
+                  <MdOutlineWavingHand className='w-6 h-6 text-black mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle'/>
                 </div>
-                <h1 className='text-center text-[#ffaa33] dark:text-[#553e8c] font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
+                <h1 className='text-center text-black font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
                   <TypeWriter
                     options={{
                       loop: true,
@@ -36,12 +36,12 @@ export const HeroSection = () => {
                 </h1>
                 <div className='flex items-center justify-center md:justify-between space-x-5 py-2 lg:py-4'>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
-                    <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3] dark:text-gray-700'/>
-                    <p className='text-white dark:text-gray-700 md:text-lg lg:text-xl'>App developer</p>
+                    <AiOutlineMobile className='w-5 h-5 text-black md:w-6 md:h-6'/>
+                    <p className='text-black md:text-lg lg:text-xl'>App developer</p>
                   </div>
                   <div className='flex items-center space-x-1 lg:space-x-2'>
-                    <FaFirefox className='w-5 h-5 md:w-6 md:h-6 text-[#ecf0f3] dark:text-gray-700'/>
-                    <p className='text-white dark:text-gray-700 md:text-lg lg:text-xl'>Web developer</p>
+                    <FaFirefox className='w-5 h-5 text-black md:w-6 md:h-6'/>
+                    <p className='text-black md:text-lg lg:text-xl'>Web developer</p>
                   </div>
                 </div>
               </div>    
