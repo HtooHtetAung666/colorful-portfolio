@@ -61,7 +61,7 @@ export const Skills = () => {
 
                 <li className='mx-auto space-y-4'>
                     {/* <SiFlutter className=' text-[#027DFD] '/> */}
-                    <svg className='w-16 h-16 lg:w-20 lg:h-20 hover:scale-110' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <svg className='w-16 h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                         <linearGradient id="flutter_logo" x1="34.31" x2="21.223" y1="47.31" y2="34.223" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stopColor="#0176d0"></stop>
                         <stop offset=".454" stopColor="#0275ce"></stop>
