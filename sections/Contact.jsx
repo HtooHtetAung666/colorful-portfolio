@@ -3,7 +3,7 @@ import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 export const Contact = () => {
   return (
-    <div id='contact' className='w-full flex items-center justify-center my-40 px-16 md:my-20 md:min-h-screen'>
+    <div id='contact' className='w-full flex items-center justify-center my-40 px-16 md:my-12 md:min-h-screen'>
       <div className='relative w-full max-w-lg'>
         <div className='absolute bottom-0 -left-0 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-80 dark:blur-none dark:opacity-100 animate-blob md:w-72 md:h-72 lg:w-80 lg:h-80'></div>
         <div className='absolute bottom-0 -right-0 w-40 h-40 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-80 dark:blur-none dark:opacity-100 animate-blob animation-delay-2000 md:w-72 md:h-72 lg:w-80 lg:h-80'></div>

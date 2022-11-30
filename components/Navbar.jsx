@@ -50,7 +50,7 @@ export const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <div className='text-purple-400'>
+            <div className='text-purple-800'>
                 <WiAlien size={100} className='p-1'/>
             </div>
                 
@@ -63,11 +63,11 @@ export const Navbar = () => {
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Hobbies</li>
                     </Link>
-                    <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Skills</li>
-                    </Link>
                     <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Projects</li>
+                    </Link>
+                    <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
+                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Skills</li>
                     </Link>
                     <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Contact</li>
@@ -103,11 +103,11 @@ export const Navbar = () => {
                         <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Hobbies</li>
                         </Link> 
-                        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                            <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Skills</li>
-                        </Link> 
                         <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Projects</li>
+                        </Link> 
+                        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
+                            <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Skills</li>
                         </Link> 
                         <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-gray-900'>Contact</li>

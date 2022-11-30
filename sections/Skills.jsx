@@ -4,7 +4,7 @@ import { SiFlutter } from "react-icons/si";
 
 export const Skills = () => {
   return (
-    <div id='skills' className='w-full h-full my-16 p-4 md:my-32 md:pt-32 lg:min-h-screen'>
+    <div id='skills' className='w-full h-full my-16 p-4 md:my-24 md:pt-32 lg:min-h-screen'>
         <div className='mx-auto flex flex-col justify-center'>
 
             <h1 className='text-center tracking-widest dark:text-indigo-400 text-[#8cadd3] text-xl uppercase md:text-2xl lg:text-3xl'>Skills</h1>
@@ -12,13 +12,13 @@ export const Skills = () => {
             <ul className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-32 md:mx-16 lg:mx-32'>
 
                 <li className='mx-auto space-y-4'>
-                    <FaReact className='w-16 h-16 lg:w-20 lg:h-20 text-[#61DBFB] hover:scale-110 ease-in duration-300'/>
+                    <FaReact className='w-16 h-16 lg:w-20 lg:h-20 text-[#61DBFB]'/>
                     <p className='text-[#61DBFB] font-bold text-center md:text-lg lg:text-xl'>React</p>
                 </li>
 
                 <li className='mx-auto space-y-4'>
                     {/* <FaVuejs className=' text-[#41B883] '/> */}
-                    <svg className='w-16 h-16 lg:w-20 lg:h-20 hover:scale-110 ease-in duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69">
+                    <svg className='w-16 h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69">
                         <path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883"></path>
                         <path d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z" fill="#34495e"></path>
                     </svg>
@@ -27,7 +27,7 @@ export const Skills = () => {
 
                 <li className='mx-auto space-y-4'>
                     {/* <FaLaravel className=' text-[#F05340]'/> */}
-                    <svg className='w-16 h-16 lg:w-20 lg:h-20 hover:scale-110 ease-in duration-300' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 800 800" xmlSpace="preserve">
+                    <svg className='w-16 h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 800 800" xmlSpace="preserve">
                         <g>
                         <path 
                         fill="#FF2D20" d="M767.228,192.77c0.275,1.012,0.421,2.046,0.421,3.095v162.479c0,4.246-2.285,8.164-5.958,10.276
@@ -61,7 +61,7 @@ export const Skills = () => {
 
                 <li className='mx-auto space-y-4'>
                     {/* <SiFlutter className=' text-[#027DFD] '/> */}
-                    <svg className='w-16 h-16 lg:w-20 lg:h-20 hover:scale-110 ease-in duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <svg className='w-16 h-16 lg:w-20 lg:h-20 hover:scale-110' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                         <linearGradient id="flutter_logo" x1="34.31" x2="21.223" y1="47.31" y2="34.223" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stopColor="#0176d0"></stop>
                         <stop offset=".454" stopColor="#0275ce"></stop>

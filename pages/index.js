@@ -18,8 +18,8 @@ export default function Home() {
 
       <HeroSection/>
       <Hobbies/>
-      <Skills/>
       <Projects/>
+      <Skills/>
       <Contact/>
       <Footer/>
 
