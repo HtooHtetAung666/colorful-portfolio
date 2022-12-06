@@ -19,17 +19,17 @@ const Hobbies = () => {
             <div className='my-16 grid gap-12 md:mx-24 md:mt-32 md:grid-cols-3 lg:mx-60'>
 
                 <div className='mx-auto space-y-4'>
-                    <div className='inline-flex w-16 h-16 flex-shrink-0 items-center justify-center rounded-full bg-red-200 md:w-20 md:h-20'>
-                        <IoGameControllerOutline className='w-8 h-8 text-red-500 md:w-10 md:h-10' />
-                    </div>
-                    <p className='text-red-500 font-bold text-center text-md md:text-lg lg:text-xl'>Gaming</p>
-                </div>
-
-                <div className='mx-auto space-y-4'>
                     <div className='inline-flex w-16 h-16 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 md:w-20 md:h-20'>
                         <FaMusic className='w-8 h-8 text-gray-500 md:w-10 md:h-10' />
                     </div>
                     <p className='text-gray-500 font-bold text-center text-md md:text-lg lg:text-xl'>Music</p>
+                </div>
+
+                <div className='mx-auto space-y-4'>
+                    <div className='inline-flex w-16 h-16 flex-shrink-0 items-center justify-center rounded-full bg-red-200 md:w-20 md:h-20'>
+                        <IoGameControllerOutline className='w-8 h-8 text-red-500 md:w-10 md:h-10' />
+                    </div>
+                    <p className='text-red-500 font-bold text-center text-md md:text-lg lg:text-xl'>Gaming</p>
                 </div>
 
                 <svg

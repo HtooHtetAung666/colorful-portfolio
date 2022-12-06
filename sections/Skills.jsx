@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaReact } from "react-icons/fa";
-import { SiFlutter } from "react-icons/si";
 
 export const Skills = () => {
   return (

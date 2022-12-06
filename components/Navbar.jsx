@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { WiAlien } from "react-icons/wi";
 import { Link } from 'react-scroll/modules';
-import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi'
 import { useTheme } from 'next-themes';    
 
@@ -25,8 +25,8 @@ export const Navbar = () => {
         const currentTheme = theme === 'system' ? systemTheme : theme;
         if(currentTheme === 'dark') {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-[#553e8c]' onClick={ () => setTheme('light') }>
-                    <HiOutlineMoon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-[#553e8c]' />
+                <button className='p-1 rounded-md shadow-xl ring-2 ring-[#483d8b]' onClick={ () => setTheme('light') }>
+                    <HiOutlineMoon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-[#483d8b]' />
                 </button>    
             )
         }
@@ -50,8 +50,8 @@ export const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
             
             {/* logo */}
-            <div className='text-purple-800'>
-                <WiAlien size={100} className='p-1'/>
+            <div className='text-violet-800 opacity-90'>
+                <WiAlien size={100} className='p-2 md:p-1'/>
             </div>
                 
             {/* Dark Mode Switcher */}
@@ -61,16 +61,16 @@ export const Navbar = () => {
             <div>
                 <ul className='hidden md:flex md:p-2 lg:p-4'>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Hobbies</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-800  uppercase'>Hobbies</li>
                     </Link>
                     <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Projects</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-800  uppercase'>Projects</li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Skills</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-800  uppercase'>Skills</li>
                     </Link>
                     <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='ml-10 text-md text-white dark:text-gray-700  uppercase'>Contact</li>
+                        <li className='ml-10 text-md text-white dark:text-gray-800  uppercase'>Contact</li>
                     </Link>
                 </ul>
                 <div className='md:hidden mr-5 text-[#1f2937]' onClick={handleNav}>
