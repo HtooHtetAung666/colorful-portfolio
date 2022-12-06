@@ -47,7 +47,7 @@ export const Navbar = () => {
 
   return (
     <div className='w-full h-16 bg-gradient-to-r from-[#5651e5] to-[#a65fec]'>
-        <div className='flex justify-between items-center w-full h-full px-2 lg:px-16'>
+        <div className='flex justify-between items-center w-full h-full px-2 pt-2 md:px-6 md:pt-4 lg:px-16 lg:pt-6'>
             
             {/* logo */}
             <div className='text-violet-800 opacity-90'>
