@@ -8,23 +8,23 @@ export const Skills = () => {
 
             <h1 className='text-center tracking-widest dark:text-indigo-400 text-[#8cadd3] text-xl uppercase md:text-2xl lg:text-3xl'>Skills</h1>
 
-            <ul className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-32 md:mx-16 lg:mx-32'>
+            <div className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-32 md:mx-16 lg:mx-32'>
 
-                <li className='mx-auto space-y-4'>
+                <div className='mx-auto space-y-4'>
                     <FaReact className='w-16 h-16 lg:w-20 lg:h-20 text-[#61DBFB]'/>
                     <p className='text-[#61DBFB] font-bold text-center md:text-lg lg:text-xl'>React</p>
-                </li>
+                </div>
 
-                <li className='mx-auto space-y-4'>
+                <div className='mx-auto space-y-4'>
                     {/* <FaVuejs className=' text-[#41B883] '/> */}
                     <svg className='w-16 h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69">
                         <path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883"></path>
                         <path d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z" fill="#34495e"></path>
                     </svg>
                     <p className='text-[#41B883] font-bold text-center md:text-lg lg:text-xl'>Vue</p>
-                </li>
+                </div>
 
-                <li className='mx-auto space-y-4'>
+                <div className='mx-auto space-y-4'>
                     {/* <FaLaravel className=' text-[#F05340]'/> */}
                     <svg className='w-16 h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 800 800" xmlSpace="preserve">
                         <g>
@@ -56,9 +56,9 @@ export const Skills = () => {
                         </g>
                     </svg>
                     <p className='text-[#F05340] font-bold text-center md:text-lg lg:text-xl'>Laravel</p>
-                </li>
+                </div>
 
-                <li className='mx-auto space-y-4'>
+                <div className='mx-auto space-y-4'>
                     {/* <SiFlutter className=' text-[#027DFD] '/> */}
                     <svg className='w-16 h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                         <linearGradient id="flutter_logo" x1="34.31" x2="21.223" y1="47.31" y2="34.223" gradientUnits="userSpaceOnUse">
@@ -76,8 +76,8 @@ export const Skills = () => {
                         <rect width="8.485" height="8.485" x="15.757" y="28.757" fill="#35c1f1" transform="rotate(-45.001 20 33)"></rect>
                     </svg>
                     <p className='text-[#027DFD] font-bold text-center md:text-lg lg:text-xl'>Flutter</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
   )
