@@ -35,13 +35,13 @@ export const HeroSection = () => {
                   />
                 </h1>
                 <div className='flex items-center justify-center md:justify-between space-x-5 py-2 lg:py-4'>
-                  <div className='flex items-center space-x-1 lg:space-x-2'>
-                    <AiOutlineMobile className='w-5 h-5 text-black md:w-6 md:h-6'/>
-                    <p className='text-black md:text-lg lg:text-xl'>App developer</p>
+                  <div className='flex items-center text-black space-x-1 lg:space-x-2'>
+                    <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6'/>
+                    <p className='md:text-lg lg:text-xl'>App developer</p>
                   </div>
-                  <div className='flex items-center space-x-1 lg:space-x-2'>
-                    <FaFirefox className='w-5 h-5 text-black md:w-6 md:h-6'/>
-                    <p className='text-black md:text-lg lg:text-xl'>Web developer</p>
+                  <div className='flex items-center text-black space-x-1 lg:space-x-2'>
+                    <FaFirefox className='w-5 h-5 md:w-6 md:h-6'/>
+                    <p className='md:text-lg lg:text-xl'>Web developer</p>
                   </div>
                 </div>
               </div>    

@@ -25,14 +25,14 @@ export const Navbar = () => {
         const currentTheme = theme === 'system' ? systemTheme : theme;
         if(currentTheme === 'dark') {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-[#483d8b]' onClick={ () => setTheme('light') }>
+                <button className='p-1 rounded-md ring-2 ring-[#483d8b]' onClick={ () => setTheme('light') }>
                     <HiOutlineMoon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-[#483d8b]' />
                 </button>    
             )
         }
         else {
             return (
-                <button className='p-1 rounded-md shadow-xl ring-2 ring-[#f48037]' onClick={ () => setTheme('dark') }>
+                <button className='p-1 rounded-md ring-2 ring-[#f48037]' onClick={ () => setTheme('dark') }>
                     <HiOutlineSun className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-[#f48037]' />
                 </button>
             )
@@ -78,8 +78,8 @@ export const Navbar = () => {
         {/* 1st style mobile nav */}
         <div className={nav ? 'md:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-slate-800/60' : ''}>
             <div className={
-                nav ? 'fixed left-0 top-0 w-[80%] z-[100] h-screen bg-[#ecf0f3] py-5 px-6 ease-in duration-500'
-                    : 'fixed left-[-100%] z-[100] h-screen top-0 py-5 px-6 ease-in duration-500'                
+                nav ? 'fixed left-0 top-0 w-[80%] z-[100] min-h-screen bg-[#ecf0f3] py-5 px-6 ease-in duration-500'
+                    : 'fixed left-[-100%] z-[100] min-h-screen top-0 py-5 px-6 ease-in duration-500'                
             }>
                 <div>
                     <div className='flex w-full items-center justify-between'>
