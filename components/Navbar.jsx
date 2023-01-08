@@ -25,15 +25,15 @@ export const Navbar = () => {
         const currentTheme = theme === 'system' ? systemTheme : theme;
         if(currentTheme === 'dark') {
             return (
-                <button className='p-1 rounded-xl ring-2 ring-slate-800 bg-[#483d8b]' onClick={ () => setTheme('light') }>
-                    <HiOutlineMoon className='w-4 h-4 lg:w-6 lg:h-6 text-slate-800' />
+                <button className='p-1' onClick={ () => setTheme('light') }>
+                    <HiOutlineMoon className='w-5 h-5 lg:w-7 lg:h-7 text-[#483d8b]' />
                 </button>    
             )
         }
         else {
             return (
-                <button className='p-1 rounded-xl ring-2 ring-[#e6e6fa] bg-[#f48037]' onClick={ () => setTheme('dark') }>
-                    <HiOutlineSun className='w-4 h-4 lg:w-6 lg:h-6 text-[#e6e6fa]' />
+                <button className='p-1' onClick={ () => setTheme('dark') }>
+                    <HiOutlineSun className='w-5 h-5 lg:w-7 lg:h-7 text-[#f48037]' />
                 </button>
             )
         }
@@ -41,7 +41,7 @@ export const Navbar = () => {
 
   return (
     <div className='w-full h-16 bg-gradient-to-r from-[#5651e5] to-[#a65fec]'>
-        <div className='flex justify-between items-center w-full h-full px-2 pt-2 md:px-4 md:pt-4 lg:px-16 lg:pt-6'>
+        <div className='flex justify-between items-center w-full h-full px-2 pt-4 md:px-4 lg:pr-16 lg:pl-8 lg:py-12'>
             
             {/* logo */}
             <div className='text-[#5C30bd]'>
@@ -49,12 +49,14 @@ export const Navbar = () => {
                 <WiAlien size={90} className='lg:hidden p-2 '/>
             </div>
                 
-            {/* Dark Mode Switcher */}
-            {renderThemeChanger()}
+            
 
             {/* Navigation */}
             <div>
-                <ul className='hidden md:flex md:p-2 lg:py-4 lg:px-4'>
+                <ul className='hidden md:flex items-center p-2 lg:py-4 lg:px-4'>
+                    <li className='p-3 lg:p-6'>
+                        {renderThemeChanger()}
+                    </li>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='text-md p-3 lg:p-6 text-white lg:text-lg'>Hobbies</li>
                     </Link>
@@ -68,8 +70,9 @@ export const Navbar = () => {
                         <li className='text-md p-3 lg:p-6 text-white lg:text-lg'>Contact</li>
                     </Link>
                 </ul>
-                <div className='md:hidden mr-6 text-[#1f2937] p-1' onClick={handleNav}>
-                    <AiOutlineMenu size={25} />
+                <div className='flex items-center mr-6 p-1 space-x-4 md:hidden'>
+                    {renderThemeChanger()}
+                    <AiOutlineMenu size={25} className='text-black' onClick={handleNav} />
                 </div>
             </div>
         </div>
@@ -86,7 +89,7 @@ export const Navbar = () => {
                     <div className='flex w-full items-center justify-between'>
                         <div className='text-black'>
                             <WiAlien size={85}/>
-                        </div>   
+                        </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer' onClick={handleNav}>
                             <AiOutlineClose size={25} className='text-black'/>
                         </div>
@@ -110,7 +113,7 @@ export const Navbar = () => {
                             <li onClick={()=>setNav(false)} className='py-4 text-sm text-black'>Contact</li>
                         </Link> 
                     </ul>
-                    <div className='mt-10 pt-14'>
+                    <div className='mt-10'>
                         <p className='text-purple-700 text-center'>&copy; Copyright 2022 htoohtet</p>
                     </div>
                 </div>
