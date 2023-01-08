@@ -6,7 +6,7 @@ import { ProjectItem } from '../components/ProjectItem'
 export const Projects = () => {
   return (
     <div id='projects' className='w-full px-2 py-10 md:mt-64 md:mb-52 lg:mt-0 lg:mb-0 lg:min-h-screen'>
-      <h1 className='text-center tracking-widest dark:text-indigo-400 text-[#8cadd3] text-xl uppercase md:text-2xl lg:text-3xl'>Projects</h1>
+      <h1 className='text-center tracking-widest text-indigo-400 text-xl uppercase md:text-2xl lg:text-3xl'>Projects</h1>
       <div className='grid md:grid-cols-2 gap-10 mt-10 p-2 lg:p-20'>
 
         <ProjectItem title='chatRoom' backgroundImg={chatRoom} projectUrl='https://chat-room-bce12.web.app/' buildWith='Vue Js / Firebase'/>
