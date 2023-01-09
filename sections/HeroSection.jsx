@@ -14,7 +14,7 @@ export const HeroSection = () => {
                   <h1 className='text-black text-xl mx-2 md:text-2xl lg:text-4xl underline decoration-4 decoration-[#f48037] dark:decoration-[#483d8b] '>
                     Hi 
                   </h1>
-                  <MdOutlineWavingHand className='w-6 h-6 text-[#f48037] dark:text-[#483d8b] mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle'/>
+                  <MdOutlineWavingHand className='w-6 h-6 text-black mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle'/>
                 </div>
                 <h1 className='text-center text-white font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
                   <TypeWriter
