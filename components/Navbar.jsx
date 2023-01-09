@@ -25,16 +25,16 @@ export const Navbar = () => {
         const currentTheme = theme === 'system' ? systemTheme : theme;
         if(currentTheme === 'dark') {
             return (
-                <button className='p-1' onClick={ () => setTheme('light') }>
+                <div className='p-1' onClick={ () => setTheme('light') }>
                     <HiOutlineMoon className='w-5 h-5 lg:w-7 lg:h-7 text-[#483d8b]' />
-                </button>    
+                </div>    
             )
         }
         else {
             return (
-                <button className='p-1' onClick={ () => setTheme('dark') }>
+                <div className='p-1' onClick={ () => setTheme('dark') }>
                     <HiOutlineSun className='w-5 h-5 lg:w-7 lg:h-7 text-[#f48037]' />
-                </button>
+                </div>
             )
         }
     }
