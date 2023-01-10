@@ -58,16 +58,16 @@ export const Navbar = () => {
                         {renderThemeChanger()}
                     </li>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-white lg:text-lg'>Hobbies</li>
+                        <li className='text-md p-3 lg:p-6 text-[#ecf0f3] lg:text-lg'>Hobbies</li>
                     </Link>
                     <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-white lg:text-lg'>Projects</li>
+                        <li className='text-md p-3 lg:p-6 text-[#ecf0f3] lg:text-lg'>Projects</li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-white lg:text-lg'>Skills</li>
+                        <li className='text-md p-3 lg:p-6 text-[#ecf0f3] lg:text-lg'>Skills</li>
                     </Link>
                     <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-white lg:text-lg'>Contact</li>
+                        <li className='text-md p-3 lg:p-6 text-[#ecf0f3] lg:text-lg'>Contact</li>
                     </Link>
                 </ul>
                 <div className='flex items-center mr-6 p-1 space-x-4 md:hidden'>
@@ -82,7 +82,7 @@ export const Navbar = () => {
         {/* 1st style mobile nav */}
         <div className={nav ? 'md:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-slate-800/60' : ''}>
             <div className={
-                nav ? 'fixed left-0 top-0 w-[80%] z-[100] min-h-screen bg-[#ecf0f3] py-5 px-6 ease-in duration-500'
+                nav ? 'fixed left-0 top-0 w-[80%] z-[100] min-h-screen bg-white py-5 px-6 ease-in duration-500'
                     : 'fixed left-[-100%] z-[100] min-h-screen top-0 py-5 px-6 ease-in duration-500'                
             }>
                 <div>

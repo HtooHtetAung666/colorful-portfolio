@@ -11,7 +11,7 @@ export const Projects = () => {
 
         <ProjectItem title='chatRoom' backgroundImg={chatRoom} projectUrl='https://chat-room-bce12.web.app/' buildWith='Vue Js / Firebase'/>
 
-        <ProjectItem title='technicalBlog' backgroundImg={technicalBlog} projectUrl='' buildWith='Laravel / Bootstrap'/>
+        <ProjectItem title='technical blog' backgroundImg={technicalBlog} projectUrl='' buildWith='Laravel / Bootstrap'/>
 
       </div>
     </div>

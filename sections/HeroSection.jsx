@@ -16,7 +16,7 @@ export const HeroSection = () => {
                   </h1>
                   <MdOutlineWavingHand className='w-6 h-6 text-black mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle'/>
                 </div>
-                <h1 className='text-center text-white font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
+                <h1 className='text-center text-[#ecf0f3] font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
                   <TypeWriter
                     options={{
                       loop: true,

@@ -3,7 +3,7 @@ import { FaReact } from "react-icons/fa";
 
 export const Skills = () => {
   return (
-    <div id='skills' className='w-full h-full my-16 p-4 md:my-24 md:pt-32 lg:min-h-screen'>
+    <div id='skills' className='w-full h-full my-16 p-4 md:mt-24 md:mb-64 md:pt-28'>
         <div className='mx-auto flex flex-col justify-center'>
 
             <h1 className='text-center tracking-widest text-indigo-400 text-xl md:text-2xl lg:text-3xl'>Skills</h1>
