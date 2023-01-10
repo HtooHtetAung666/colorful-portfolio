@@ -19,15 +19,15 @@ const Hobbies = () => {
             <div className='my-16 grid gap-12 md:mx-24 md:mt-32 md:grid-cols-3 lg:mx-60'>
 
                 <div className='mx-auto space-y-4'>
-                    <div className='inline-flex flex-shrink-0 items-center justify-center rounded-full bg-gray-200 w-14 h-14 md:w-16 md:h-16'>
-                        <FaMusic className='text-gray-500 w-6 h-6 md:w-8 md:h-8' />
+                    <div className='inline-flex flex-shrink-0 items-center justify-center rounded-full bg-gray-200 w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20'>
+                        <FaMusic className='text-gray-500 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10' />
                     </div>
                     <p className='text-gray-500 font-bold text-center text-md md:text-lg lg:text-xl'>Music</p>
                 </div>
 
                 <div className='mx-auto space-y-4'>
-                    <div className='inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-red-200 md:w-16 md:h-16'>
-                        <IoGameControllerOutline className='w-6 h-6 text-red-500 md:w-8 md:h-8' />
+                    <div className='inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-red-200 md:w-16 md:h-16 lg:w-20 lg:h-20'>
+                        <IoGameControllerOutline className='w-6 h-6 text-red-500 md:w-8 md:h-8 lg:w-10 lg:h-10' />
                     </div>
                     <p className='text-red-500 font-bold text-center text-md md:text-lg lg:text-xl'>Gaming</p>
                 </div>
@@ -39,8 +39,8 @@ const Hobbies = () => {
                 </svg>
 
                 <div className='mx-auto space-y-4'>
-                    <div className='inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-violet-200 md:w-16 md:h-16'>
-                        <IoCodeSlash className='w-6 h-6 text-violet-500 md:w-8 md:h-8' />
+                    <div className='inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-violet-200 md:w-16 md:h-16 lg:w-20 lg:h-20'>
+                        <IoCodeSlash className='w-6 h-6 text-violet-500 md:w-8 md:h-8 lg:w-10 lg:h-10' />
                     </div>
                     <p className='text-violet-500 font-bold text-center md:text-lg lg:text-xl'>Coding</p>
                 </div>
