@@ -58,16 +58,16 @@ export const Navbar = () => {
                         {renderThemeChanger()}
                     </li>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-[#ecf0f3] lg:text-lg'>Hobbies</li>
+                        <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Hobbies</li>
                     </Link>
                     <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-[#ecf0f3] lg:text-lg'>Projects</li>
+                        <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Projects</li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-[#ecf0f3] lg:text-lg'>Skills</li>
+                        <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Skills</li>
                     </Link>
                     <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-[#ecf0f3] lg:text-lg'>Contact</li>
+                        <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Contact</li>
                     </Link>
                 </ul>
                 <div className='flex items-center mr-6 p-1 space-x-4 md:hidden'>
