@@ -12,10 +12,17 @@ export const Navbar = () => {
     useEffect(()=>{
         setMounted(true)
     },[]);
-    
+
     const handleNav = () => {
         setNav(!nav);
     }
+
+    useEffect(() => {
+        if (nav) 
+            document.body.style.overflow = 'hidden';
+        else 
+            document.body.style.overflow = 'visible';
+    }, [nav]);
 
     const {systemTheme,theme,setTheme} = useTheme();
 
