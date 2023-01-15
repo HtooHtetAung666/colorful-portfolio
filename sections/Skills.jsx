@@ -8,7 +8,7 @@ export const Skills = () => {
 
             <h1 className='text-center tracking-widest text-indigo-400 text-xl md:text-2xl lg:text-3xl'>Skills</h1>
 
-            <div className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-32 md:mx-16 lg:mx-32'>
+            <div className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-24 lg:mt-32 md:mx-16 lg:mx-32'>
 
                 <div className='mx-auto space-y-4'>
                     <FaReact className='w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 text-[#61DBFB]'/>

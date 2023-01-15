@@ -33,14 +33,14 @@ export const Navbar = () => {
         if(currentTheme === 'dark') {
             return (
                 <div className='p-1' onClick={ () => setTheme('light') }>
-                    <HiOutlineMoon className='w-5 h-5 lg:w-7 lg:h-7 text-[#483d8b]' />
+                    <HiOutlineMoon className='w-5 h-5 lg:w-7 lg:h-7 text-[#483d8b] cursor-pointer' />
                 </div>    
             )
         }
         else {
             return (
                 <div className='p-1' onClick={ () => setTheme('dark') }>
-                    <HiOutlineSun className='w-5 h-5 lg:w-7 lg:h-7 text-[#f48037]' />
+                    <HiOutlineSun className='w-5 h-5 lg:w-7 lg:h-7 text-[#f48037] cursor-pointer' />
                 </div>
             )
         }
@@ -53,17 +53,15 @@ export const Navbar = () => {
             {/* logo */}
             <div className='text-[#5C30bd]'>
                 <WiAlien size={100} className='hidden lg:block p-1'/>
-                <WiAlien size={90} className='lg:hidden p-2 '/>
+                <WiAlien size={90} className='lg:hidden p-2 md:p-1 '/>
             </div>
                 
             
 
             {/* Navigation */}
-            <div>
-                <ul className='hidden md:flex items-center p-2 lg:py-4 lg:px-4'>
-                    <li className='p-3 lg:p-6'>
-                        {renderThemeChanger()}
-                    </li>
+            <div className='flex items-center space-x-3 md:space-x-6 lg:space-x-0'>
+                {renderThemeChanger()}
+                <ul className='hidden lg:flex items-center p-2 lg:py-4 lg:px-4'>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                         <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Hobbies</li>
                     </Link>
@@ -77,8 +75,7 @@ export const Navbar = () => {
                         <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Contact</li>
                     </Link>
                 </ul>
-                <div className='flex items-center mr-6 p-1 space-x-4 md:hidden'>
-                    {renderThemeChanger()}
+                <div className='flex items-center mr-6 p-2 lg:hidden'>
                     <AiOutlineMenu size={25} className='text-black' onClick={handleNav} />
                 </div>
             </div>
@@ -87,9 +84,9 @@ export const Navbar = () => {
         {/* Mobile Menu */}
 
         {/* 1st style mobile nav */}
-        <div className={nav ? 'md:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-slate-800/60' : ''}>
+        <div className={nav ? 'lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-slate-800/60' : ''}>
             <div className={
-                nav ? 'fixed left-0 top-0 w-[80%] z-[100] min-h-screen bg-white py-5 px-6 ease-in duration-500'
+                nav ? 'fixed left-0 top-0 w-[80%] md:w-[60%] z-[100] min-h-screen bg-white py-5 px-6 ease-in duration-500'
                     : 'fixed left-[-100%] z-[100] min-h-screen top-0 py-5 px-6 ease-in duration-500'                
             }>
                 <div>

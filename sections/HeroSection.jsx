@@ -28,7 +28,7 @@ export const HeroSection = () => {
                         .typeString("Htoo Htet")
                         .pauseFor(2000)
                         .deleteAll()
-                        .typeString("I love to Code!!")
+                        .typeString("Coding is my job!!")
                         .pauseFor(3000)
                         .start();
                     }}
