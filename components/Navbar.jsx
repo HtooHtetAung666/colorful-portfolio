@@ -17,12 +17,12 @@ export const Navbar = () => {
         setNav(!nav);
     }
 
-    useEffect(() => {
-        if (nav) 
-            document.body.style.overflow = 'hidden';
-        else 
-            document.body.style.overflow = 'visible';
-    }, [nav]);
+    // useEffect(() => {
+    //     if (nav) 
+    //         document.body.style.overflow = 'hidden';
+    //     else 
+    //         document.body.style.overflow = 'visible';
+    // }, [nav]);
 
     const {systemTheme,theme,setTheme} = useTheme();
 
