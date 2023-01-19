@@ -59,7 +59,7 @@ export const Navbar = () => {
             
 
             {/* Navigation */}
-            <div className='flex items-center space-x-3 md:space-x-6 lg:space-x-0'>
+            <div className='flex items-center space-x-3 mr-4 md:space-x-6 md:mr-5 lg:mr-0 lg:space-x-0'>
                 {renderThemeChanger()}
                 <ul className='hidden lg:flex items-center p-2 lg:py-4 lg:px-4'>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
@@ -76,7 +76,7 @@ export const Navbar = () => {
                     </Link>
                 </ul>
                 <div className='flex items-center mr-6 p-2 lg:hidden'>
-                    <AiOutlineMenu size={25} className='text-black' onClick={handleNav} />
+                    <AiOutlineMenu size={25} className='text-white' onClick={handleNav} />
                 </div>
             </div>
         </div>
