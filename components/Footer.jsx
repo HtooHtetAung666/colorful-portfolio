@@ -4,7 +4,7 @@ import { FaFacebook, FaGithub } from 'react-icons/fa'
 
 export const Footer = () => {
   return (
-    <div className='mt-16 bg-gradient-to-r from-[#5651e5] to-[#a65fec] items-center justify-center md:py-2 lg:space-y-4'>
+    <div className='mt-16 bg-slate-800 items-center justify-center md:py-2 lg:space-y-4'>
         <div className='items-center justify-center md:flex'>
             <p className='text-center text-md px-4 pt-4 pb-1 text-[#ecf0f3] tracking-wide md:pt-4 md:text-lg'>Reach me via</p>
             <div className='flex items-center justify-center p-1 space-x-5 md:pt-4 md:space-x-3'>

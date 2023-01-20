@@ -47,36 +47,35 @@ export const Navbar = () => {
     }
 
   return (
-    <div className='w-full h-16 bg-gradient-to-r from-[#5651e5] to-[#a65fec]'>
-        <div className='flex justify-between items-center w-full h-full px-2 pt-4 md:px-4 lg:pr-16 lg:pl-8 lg:py-12'>
+    <div className='w-full h-16 bg-slate-800'>
+        <div className='flex justify-between items-center w-full h-full px-2 pt-2 md:px-4 lg:pl-5 lg:pr-16 lg:py-12'>
             
             {/* logo */}
             <div className='text-[#5C30bd]'>
-                <WiAlien size={100} className='hidden lg:block p-1'/>
-                <WiAlien size={90} className='lg:hidden p-2 md:p-1 '/>
+                <WiAlien size={86} className='p-2 lg:p-1'/>
             </div>
                 
             
 
             {/* Navigation */}
             <div className='flex items-center space-x-3 mr-4 md:space-x-6 md:mr-5 lg:mr-0 lg:space-x-0'>
-                {renderThemeChanger()}
                 <ul className='hidden lg:flex items-center p-2 lg:py-4 lg:px-4'>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Hobbies</li>
+                        <li className='text-lg p-6 text-white hover:text-[#f48037] dark:hover:text-[#483d8b]'>Hobbies</li>
                     </Link>
                     <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Projects</li>
+                        <li className='text-lg p-6 text-white hover:text-[#f48037] dark:hover:text-[#483d8b]'>Projects</li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Skills</li>
+                        <li className='text-lg p-6 text-white hover:text-[#f48037] dark:hover:text-[#483d8b]'>Skills</li>
                     </Link>
                     <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-md p-3 lg:p-6 text-white hover:text-black lg:text-lg'>Contact</li>
+                        <li className='text-lg p-6 text-white hover:text-[#f48037] dark:hover:text-[#483d8b]'>Contact</li>
                     </Link>
                 </ul>
+                {renderThemeChanger()}
                 <div className='flex items-center mr-6 p-2 lg:hidden'>
-                    <AiOutlineMenu size={25} className='text-white' onClick={handleNav} />
+                    <AiOutlineMenu size={25} className='text-white hover:text-black' onClick={handleNav} />
                 </div>
             </div>
         </div>

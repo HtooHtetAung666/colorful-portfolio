@@ -10,7 +10,7 @@ html {
 @layer base {
   body {
     @apply p-0 m-0 tracking-wide bg-[#ecf0f3];
-    @apply dark:bg-slate-800;
+    @apply dark:bg-slate-900;
   }
   li {
     @apply cursor-pointer

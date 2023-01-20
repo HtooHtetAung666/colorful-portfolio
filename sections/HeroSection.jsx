@@ -7,16 +7,16 @@ import TypeWriter from "typewriter-effect";
 export const HeroSection = () => {
   return (
     <>
-      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#5651e5] to-[#a65fec]'>
+      <div id='herosection' className='w-full h-full text-center bg-slate-800'>
           <div className='px-0 pt-16 pb-8 items-center md:flex md:px-8 md:pt-20 md:pb-10 md:justify-between lg:px-44 lg:py-36'>
               <div>
                 <div className='flex items-center justify-center py-2 md:py-3 lg:py-4'>
-                  <h1 className='text-slate-900 text-xl mx-2 md:text-2xl lg:text-4xl underline decoration-4 decoration-[#f48037] dark:decoration-[#483d8b] '>
+                  <h1 className='text-black text-xl mx-2 md:text-2xl lg:text-4xl'>
                     Hi 
                   </h1>
                   <MdOutlineWavingHand className='w-6 h-6 text-black mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle'/>
                 </div>
-                <h1 className='text-center text-white font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
+                <h1 className='text-center text-[#f48037] dark:text-[#483d8b] font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-4xl lg:py-4'>
                   <TypeWriter
                     options={{
                       loop: true,
@@ -35,11 +35,11 @@ export const HeroSection = () => {
                   />
                 </h1>
                 <div className='flex items-center justify-center md:justify-between space-x-5 py-2 lg:py-4'>
-                  <div className='flex items-center text-slate-900 space-x-1 lg:space-x-2'>
+                  <div className='flex items-center text-black space-x-1 lg:space-x-2'>
                     <FaFirefox className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7'/>
                     <p className='md:text-lg lg:text-xl'>Web developer</p>
                   </div>
-                  <div className='flex items-center text-slate-900 space-x-1 lg:space-x-2'>
+                  <div className='flex items-center text-black space-x-1 lg:space-x-2'>
                     <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7'/>
                     <p className='md:text-lg lg:text-xl'>App developer</p>
                   </div>
@@ -49,7 +49,7 @@ export const HeroSection = () => {
               <img src="/code_thinking.svg" className="mx-auto w-80 h-80 mt-4 md:mx-0 md:mt-0 lg:w-6/12 lg:h-6/12" alt="freelancer" />
           </div>
       </div>
-      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#5651e5] to-[#a65fec] md:h-40 md:-mt-16 lg:-mt-20'>
+      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-slate-800 md:h-40 md:-mt-16 lg:-mt-20'>
       </div>
     </>
   )
