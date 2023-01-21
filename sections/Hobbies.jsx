@@ -13,7 +13,7 @@ const Hobbies = () => {
                     <path fill="#A29BFE" d="M33.7,-48.5C45.6,-44.9,58.3,-38.7,61.5,-28.9C64.6,-19.2,58.2,-5.9,52.7,5C47.2,15.9,42.6,24.4,37.4,35C32.3,45.6,26.5,58.2,15.7,68.2C4.8,78.1,-11.2,85.3,-22.9,80.7C-34.6,76,-42.1,59.5,-53.8,46.4C-65.5,33.3,-81.6,23.7,-85.3,11C-89,-1.6,-80.4,-17.2,-71.7,-31.3C-63,-45.4,-54.2,-58,-42.2,-61.5C-30.2,-65.1,-15.1,-59.6,-2.1,-56.4C10.9,-53.1,21.9,-52.1,33.7,-48.5Z" transform="translate(100 100)" />
                 </svg>
 
-                <h1 className='text-center tracking-widest text-indigo-400 text-xl md:text-2xl'>Hobbies</h1>
+                <h1 className='text-center tracking-widest text-indigo-400 text-xl md:text-2xl lg:text-3xl font-bold'>Hobbies</h1>
 
                 <div className='my-16 grid gap-12 md:mx-24 md:mt-24 lg:mt-32 md:grid-cols-3 lg:mx-60'>
 
@@ -21,14 +21,14 @@ const Hobbies = () => {
                         <div className='inline-flex flex-shrink-0 items-center justify-center rounded-full bg-gray-200 w-14 h-14 md:w-16 md:h-16'>
                             <FaMusic className='text-gray-500 w-6 h-6 md:w-8 md:h-8' />
                         </div>
-                        <p className='text-gray-500 font-bold text-center text-md md:text-lg lg:text-xl'>Music</p>
+                        <p className='text-gray-500 text-center text-md md:text-lg lg:text-xl'>Music</p>
                     </div>
 
                     <div className='mx-auto space-y-4'>
                         <div className='inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-red-200 md:w-16 md:h-16'>
                             <IoGameControllerOutline className='w-6 h-6 text-red-500 md:w-8 md:h-8' />
                         </div>
-                        <p className='text-red-500 font-bold text-center text-md md:text-lg lg:text-xl'>Gaming</p>
+                        <p className='text-red-500 text-center text-md md:text-lg lg:text-xl'>Gaming</p>
                     </div>
 
                     <svg
@@ -41,7 +41,7 @@ const Hobbies = () => {
                         <div className='inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-violet-200 md:w-16 md:h-16'>
                             <IoCodeSlash className='w-6 h-6 text-violet-500 md:w-8 md:h-8' />
                         </div>
-                        <p className='text-violet-500 font-bold text-center md:text-lg lg:text-xl'>Coding</p>
+                        <p className='text-violet-500 text-center md:text-lg lg:text-xl'>Coding</p>
                     </div>
 
                 </div>

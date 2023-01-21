@@ -6,13 +6,13 @@ export const Skills = () => {
     <div id='skills' className='w-full h-full my-16 p-4 md:mt-24 md:mb-64 md:pt-28'>
         <div className='mx-auto flex flex-col justify-center'>
 
-            <h1 className='text-center tracking-widest text-indigo-400 text-xl md:text-2xl'>Skills</h1>
+            <h1 className='text-center tracking-widest text-indigo-400 text-xl md:text-2xl lg:text-3xl font-bold'>Skills</h1>
 
             <div className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-24 lg:mt-32 md:mx-16 lg:mx-32'>
 
                 <div className='mx-auto space-y-4'>
                     <FaReact className='w-14 h-14 md:w-16 md:h-16 text-[#61DBFB]'/>
-                    <p className='text-[#61DBFB] font-bold text-center md:text-lg lg:text-xl'>React</p>
+                    <p className='text-[#61DBFB] text-center md:text-lg lg:text-xl'>React</p>
                 </div>
 
                 <div className='mx-auto space-y-4'>
@@ -20,7 +20,7 @@ export const Skills = () => {
                         <path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883"></path>
                         <path d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z" fill="#34495e"></path>
                     </svg>
-                    <p className='text-[#41B883] font-bold text-center md:text-lg lg:text-xl'>Vue</p>
+                    <p className='text-[#41B883] text-center md:text-lg lg:text-xl'>Vue</p>
                 </div>
 
                 <div className='mx-auto space-y-4'>
@@ -53,7 +53,7 @@ export const Skills = () => {
                                         L328.813,589.131z"></path>
                         </g>
                     </svg>
-                    <p className='text-[#F05340] font-bold text-center md:text-lg lg:text-xl'>Laravel</p>
+                    <p className='text-[#F05340] text-center md:text-lg lg:text-xl'>Laravel</p>
                 </div>
 
                 <div className='mx-auto space-y-4'>
@@ -72,7 +72,7 @@ export const Skills = () => {
                         <polygon fill="#50e6ff" points="37,22 20,39 14,33 25,22"></polygon>
                         <rect width="8.485" height="8.485" x="15.757" y="28.757" fill="#35c1f1" transform="rotate(-45.001 20 33)"></rect>
                     </svg>
-                    <p className='text-[#027DFD] font-bold text-center md:text-lg lg:text-xl'>Flutter</p>
+                    <p className='text-[#027DFD] text-center md:text-lg lg:text-xl'>Flutter</p>
                 </div>
             </div>
         </div>

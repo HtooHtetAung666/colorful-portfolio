@@ -47,7 +47,7 @@ export const Navbar = () => {
     }
 
   return (
-    <div className='w-full h-16 bg-slate-800'>
+    <div className='w-full h-16 bg-gradient-to-r from-[#5651e5] to-[#a65fec] dark:from-slate-700 dark:to-slate-700'>
         <div className='flex justify-between items-center w-full h-full px-2 pt-2 md:px-4 lg:pl-5 lg:pr-16 lg:py-12'>
             
             {/* logo */}
@@ -61,16 +61,16 @@ export const Navbar = () => {
             <div className='flex items-center space-x-3 mr-4 md:space-x-6 md:mr-5 lg:mr-0 lg:space-x-0'>
                 <ul className='hidden lg:flex items-center p-2 lg:py-4 lg:px-4'>
                     <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-lg p-6 text-white hover:text-[#f48037] dark:hover:text-[#483d8b]'>Hobbies</li>
+                        <li className='text-lg p-6 text-white hover:text-black'>Hobbies</li>
                     </Link>
                     <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-lg p-6 text-white hover:text-[#f48037] dark:hover:text-[#483d8b]'>Projects</li>
+                        <li className='text-lg p-6 text-white hover:text-black'>Projects</li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-lg p-6 text-white hover:text-[#f48037] dark:hover:text-[#483d8b]'>Skills</li>
+                        <li className='text-lg p-6 text-white hover:text-black'>Skills</li>
                     </Link>
                     <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
-                        <li className='text-lg p-6 text-white hover:text-[#f48037] dark:hover:text-[#483d8b]'>Contact</li>
+                        <li className='text-lg p-6 text-white hover:text-black'>Contact</li>
                     </Link>
                 </ul>
                 {renderThemeChanger()}

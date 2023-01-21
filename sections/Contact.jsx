@@ -12,7 +12,7 @@ export const Contact = () => {
         <div className='relative space-y-4 md:m-7  lg:m-0'>
 
         <div className='p-5 bg-inherit rounded-lg flex items-center justify-center space-x-8 md:justify-between md:bg-[#ecf0f3]'>
-          <h1 className='text-purple-400 tracking-widest text-xl md:tracking-normal md:text-2xl lg:text-3xl'>Contact Info</h1>
+          <h1 className='text-purple-400 tracking-widest text-xl md:tracking-normal md:text-2xl lg:text-3xl font-bold'>Contact Info</h1>
           <div className='hidden w-40 h-6 rounded-lg bg-purple-300 md:block'></div>
         </div>
 
