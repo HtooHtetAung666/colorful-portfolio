@@ -7,7 +7,7 @@ import TypeWriter from "typewriter-effect";
 export const HeroSection = () => {
   return (
     <>
-      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#5651e5] to-[#a65fec] dark:from-slate-700 dark:to-slate-700'>
+      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#a65fec] to-violet-500 dark:from-slate-700 dark:to-slate-700'>
           <div className='px-0 pt-16 pb-8 items-center md:flex md:px-8 md:pt-20 md:pb-10 md:justify-between lg:px-44 lg:py-36'>
               <div>
                 <div className='flex items-center justify-center py-2 md:py-3 lg:py-4'>
@@ -49,7 +49,7 @@ export const HeroSection = () => {
               <img src="/code_thinking.svg" className="text-slate-700 mx-auto w-80 h-80 mt-4 md:mx-0 md:mt-0 lg:w-6/12 lg:h-6/12" alt="freelancer" />
           </div>
       </div>
-      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#5651e5] to-[#a65fec] dark:from-slate-700 dark:to-slate-700 md:h-40 md:-mt-16 lg:-mt-20 3xl:hidden'>
+      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#a65fec] to-violet-500 dark:from-slate-700 dark:to-slate-700 md:h-40 md:-mt-16 lg:-mt-20 3xl:hidden'>
       </div>
     </>
   )
