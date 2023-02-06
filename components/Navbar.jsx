@@ -7,16 +7,15 @@ import { useTheme } from 'next-themes';
 export const Navbar = () => {
     const [nav,setNav] = useState(false);
     const [mounted,setMounted] = useState(false);
-    
-    useEffect(()=>{
-        setMounted(true)
-    },[]);
-
-    if(!mounted) {
-        return null;
-    }
-
     const {theme,setTheme} = useTheme();
+    
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    if (!mounted) {
+        return null
+    }
 
     const handleNav = () => {
         setNav(!nav);
@@ -50,7 +49,7 @@ export const Navbar = () => {
 
                     <label className="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" className="sr-only peer" onClick={()=>setTheme(theme === 'dark' ? 'light' : 'dark')}/>
-                        <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-white dark:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-800"></div>
+                        <div className="w-11 h-6 bg-slate-800 ring-2 ring-[#ecf0f3] rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-[#ecf0f3] after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-800"></div>
                     </label>
 
                     <button className='rounded-sm lg:hidden' onClick={handleNav}>
