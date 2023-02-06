@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Navbar } from '../components/Navbar'
 import { HeroSection } from '../sections/HeroSection'
 import Hobbies from '../sections/Hobbies'
 import { Skills } from '../sections/Skills'
@@ -19,6 +20,7 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
 
+      <Navbar/>
       <HeroSection/>
       <Hobbies/>
       <Projects/>
