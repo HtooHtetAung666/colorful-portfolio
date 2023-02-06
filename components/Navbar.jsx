@@ -16,7 +16,19 @@ export const Navbar = () => {
         setNav(!nav);
     }
 
-    const {theme,setTheme} = useTheme();
+    const {systemTheme,theme,setTheme} = useTheme();
+
+    const themeChanger = () => {
+        if(!mounted) return null;
+
+        const currentTheme = theme === 'system' ? systemTheme : theme;
+
+        if(currentTheme==='dark') {
+            return setTheme('light');
+        }else {
+            return setTheme('dark');
+        }
+    }
 
     return (
         <div className='w-full h-16 bg-gradient-to-r from-[#a65fec] to-violet-500 dark:from-slate-600 dark:to-slate-600'>
@@ -28,7 +40,7 @@ export const Navbar = () => {
                 </div>
                     
                 {/* Navigation */}
-                <div className='flex items-center space-x-3 mr-4 md:space-x-6 md:mr-5 lg:mr-0 lg:space-x-0'>
+                <div className='flex items-center space-x-5 mr-4 md:space-x-6 md:mr-5 lg:mr-0 lg:space-x-0'>
                     <ul className='hidden lg:flex items-center p-2 lg:py-4 lg:px-4'>
                         <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                             <li className='text-lg p-6 text-white hover:text-black'>Hobbies</li>
@@ -45,7 +57,7 @@ export const Navbar = () => {
                     </ul>
 
                     <label className="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" value="" className="sr-only peer" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}/>
+                        <input type="checkbox" value="" className="sr-only peer" onClick={()=>themeChanger()}/>
                         <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-white dark:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-800"></div>
                     </label>
 

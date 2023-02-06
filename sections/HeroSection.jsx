@@ -45,7 +45,7 @@ export const HeroSection = () => {
                   </div>
                 </div>
               </div>    
-              <img src="/mathematics.svg" className="text-slate-700 mx-auto w-56 h-56 md:w-80 md:h-80 mt-4 md:mx-0 md:mt-0 lg:w-6/12 lg:h-6/12" alt="freelancer" />
+              <img src="/assets/mathematics.svg" className="text-slate-700 mx-auto w-60 h-60 md:w-80 md:h-80 mt-4 md:mx-0 md:mt-0 lg:w-6/12 lg:h-6/12" alt="freelancer" />
           </div>
       </div>
       <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#a65fec] to-violet-500 dark:from-slate-600 dark:to-slate-600 md:h-40 md:-mt-16 lg:-mt-20 3xl:hidden'>
