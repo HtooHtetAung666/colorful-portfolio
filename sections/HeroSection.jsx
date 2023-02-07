@@ -7,8 +7,8 @@ import TypeWriter from "typewriter-effect";
 export const HeroSection = () => {
   return (
     <>
-      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#a65fec] to-violet-500 dark:from-slate-600 dark:to-slate-600'>
-          <div className='px-0 pt-16 pb-8 items-center space-y-14 md:space-y-0 md:flex md:px-8 md:pt-20 md:pb-10 md:justify-between lg:px-44 lg:py-36'>
+      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] dark:from-slate-600 dark:to-slate-700'>
+          <div className='px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-8 md:pt-20 md:pb-10 md:justify-between lg:px-44 lg:py-36'>
               <div>
                 <div className='flex items-center justify-center py-2 md:py-3 lg:py-4'>
                   <h1 className='text-white dark:text-black text-xl mx-2 md:text-2xl lg:text-4xl'>
@@ -45,10 +45,10 @@ export const HeroSection = () => {
                   </div>
                 </div>
               </div>    
-              <img src="/assets/mathematics.svg" className="text-slate-700 mx-auto w-60 h-60 md:w-80 md:h-80 mt-4 md:mx-0 md:mt-0 lg:w-6/12 lg:h-6/12" alt="freelancer" />
+              <img src="/assets/coding.svg" className="mx-auto w-64 h-64 md:w-80 md:h-80 mt-4 md:mx-0 md:mt-0 lg:w-5/12 lg:h-5/12" alt="coding" />
           </div>
       </div>
-      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#a65fec] to-violet-500 dark:from-slate-600 dark:to-slate-600 md:h-40 md:-mt-16 lg:-mt-20 3xl:hidden'>
+      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] dark:from-slate-600 dark:to-slate-700 md:h-40 md:-mt-16 lg:-mt-20 3xl:hidden'>
       </div>
     </>
   )

@@ -22,7 +22,7 @@ export const Navbar = () => {
     }
 
     return (
-        <div className='w-full h-16 bg-gradient-to-r from-[#a65fec] to-violet-500 dark:from-slate-600 dark:to-slate-600'>
+        <div className='w-full h-16 bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] dark:from-slate-600 dark:to-slate-700'>
             <div className='flex justify-between items-center w-full h-full px-2 pt-4 md:px-4 lg:pl-5 lg:pr-16 lg:py-12'>
                 
                 {/* logo */}
@@ -48,7 +48,7 @@ export const Navbar = () => {
                     </ul>
 
                     <label className="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" value="" className="sr-only peer" onClick={()=>setTheme(theme === 'dark' ? 'light' : 'dark')}/>
+                        <input type="checkbox" className="sr-only peer" value={theme} onClick={()=>setTheme(theme === 'dark' ? 'light' : 'dark')} defaultChecked={theme==='dark'}/>
                         <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-white dark:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-800"></div>
                     </label>
 
