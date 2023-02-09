@@ -22,7 +22,7 @@ export const Navbar = () => {
     }
 
     return (
-        <div className='w-full h-16 bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] dark:from-slate-600 dark:to-slate-700'>
+        <div className='w-full h-16 bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] dark:from-slate-800 dark:to-gray-800'>
             <div className='flex justify-between items-center w-full h-full px-2 pt-4 md:px-4 lg:pl-5 lg:pr-16 lg:py-12'>
                 
                 {/* logo */}
@@ -49,7 +49,7 @@ export const Navbar = () => {
 
                     <label className="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" className="sr-only peer" value={theme} onClick={()=>setTheme(theme === 'dark' ? 'light' : 'dark')} defaultChecked={theme==='dark'}/>
-                        <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-white dark:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-800"></div>
+                        <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-white dark:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-700"></div>
                     </label>
 
                     <button className='rounded-sm lg:hidden' onClick={handleNav}>
@@ -61,7 +61,7 @@ export const Navbar = () => {
 
             {/* Mobile Menu */}
 
-            <div className={nav ? 'lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-slate-800/60' : ''}>
+            <div className={nav ? 'lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-slate-700/60' : ''}>
                 <div className={
                     nav ? 'fixed left-0 top-0 w-[80%] md:w-[60%] z-[100] min-h-screen bg-white py-5 px-6 ease-in duration-500'
                         : 'fixed left-[-100%] z-[100] min-h-screen top-0 py-5 px-6 ease-in duration-500'                
