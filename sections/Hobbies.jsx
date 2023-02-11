@@ -15,7 +15,7 @@ const Hobbies = () => {
 
                 <h1 className='text-center tracking-widest text-indigo-400 text-xl md:text-2xl lg:text-3xl font-bold'>Hobbies</h1>
 
-                <div className='my-16 grid gap-12 md:mx-24 md:mt-24 lg:mt-32 md:grid-cols-3 lg:mx-60'>
+                <div className='my-16 grid gap-12 md:mx-24 md:mt-24 md:grid-cols-3 lg:mt-32 lg:mx-30 xl:mx-60'>
 
                     <div className='mx-auto space-y-4'>
                         <div className='inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-violet-200 md:w-16 md:h-16'>

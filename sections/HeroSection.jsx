@@ -8,7 +8,7 @@ export const HeroSection = () => {
   return (
     <>
       <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] dark:from-slate-800 dark:to-gray-800'>
-          <div className='px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-60 lg:py-36'>
+          <div className='px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 xl:px-60 lg:py-36'>
               <div>
                 <div className='flex items-center justify-center py-2 md:py-3 lg:justify-start lg:py-6'>
                   <h1 className='text-black dark:text-white text-xl mx-2 md:text-2xl lg:text-4xl'>
