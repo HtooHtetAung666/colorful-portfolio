@@ -22,11 +22,11 @@ export const Navbar = () => {
     }
 
     return (
-        <div className='w-full h-16 bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] dark:from-slate-800 dark:to-gray-800'>
+        <div className='w-full h-16 bg-gradient-to-r from-[#84329b] to-[#a65fec]'>
             <div className='flex justify-between items-center w-full h-full px-2 pt-4 md:px-4 lg:pl-5 lg:pr-16 lg:py-12'>
                 
                 {/* logo */}
-                <div className='text-[#483d8b]'>
+                <div className='text-[#fc8eac]'>
                     <WiAlien size={86} className='p-2 lg:p-1'/>
                 </div>
                     
@@ -49,11 +49,11 @@ export const Navbar = () => {
 
                     <label className="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" className="sr-only peer" value={theme} onClick={()=>setTheme(theme === 'dark' ? 'light' : 'dark')} defaultChecked={theme==='dark'}/>
-                        <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-white dark:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-700"></div>
+                        <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-[#fc8eac] rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-[#ecf0f3] after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-700"></div>
                     </label>
 
                     <button className='rounded-sm lg:hidden' onClick={handleNav}>
-                        <AiOutlineMenu size={25} className='text-white'/>
+                        <AiOutlineMenu size={25} className='text-black'/>
                     </button>
                         
                 </div>
@@ -68,11 +68,11 @@ export const Navbar = () => {
                 }>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <div className='text-black'>
-                                <WiAlien size={80}/>
+                            <div className='text-[#fc8eac]'>
+                                <WiAlien size={76}/>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer' onClick={handleNav}>
-                                <AiOutlineClose size={25} className='text-black'/>
+                                <AiOutlineClose size={22} className='text-black'/>
                             </div>
                         </div>
                         <div className='border-b border-[#a65fec] my-4'>
@@ -95,7 +95,7 @@ export const Navbar = () => {
                             </Link> 
                         </ul>
                         <div className='mt-10'>
-                            <p className='text-purple-700 text-center'>&copy; Copyright 2022 htoohtet</p>
+                            <p className='text-[#a65fec] text-center'>&copy; Copyright 2022 htoohtet</p>
                         </div>
                     </div>
                 </div>

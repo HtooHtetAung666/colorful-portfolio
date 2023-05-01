@@ -6,7 +6,7 @@ export const Skills = () => {
     <div id='skills' className='w-full h-full my-16 p-4 md:mt-24 md:mb-64 md:pt-28'>
         <div className='mx-auto flex flex-col justify-center'>
 
-            <h1 className='text-center tracking-widest text-indigo-400 text-xl md:text-2xl lg:text-3xl font-bold'>Skills</h1>
+            <h1 className='text-center tracking-widest text-black dark:text-white text-xl md:text-2xl lg:text-3xl font-bold'>Skills</h1>
 
             <div className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-24 md:mx-16 lg:mt-32 lg:mx-30 xl:mx-32'>
 

@@ -1,23 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import { FaFacebook, FaGithub } from 'react-icons/fa'
+import { AiFillHeart } from "react-icons/ai";
 
 export const Footer = () => {
   return (
-    <div className='mt-16 bg-gradient-to-r from-[#9d50bb] to-[#6e48aa] dark:from-slate-800 dark:to-gray-800 items-center justify-center md:py-2 lg:space-y-4'>
-        <div className='items-center justify-center md:flex'>
-            <p className='text-center text-md px-4 pt-4 pb-1 text-[#ecf0f3] tracking-wide md:pt-4 md:text-lg'>Reach me via</p>
-            <div className='flex items-center justify-center p-1 space-x-5 md:pt-4 md:space-x-3'>
-               <Link href='https://www.facebook.com/htoo.htet.771'>
-                    <a target='_blank'>
-                        <FaFacebook className='w-6 h-6 text-[#ecf0f3] cursor-pointer lg:w-8 lg:h-8'/>
-                    </a>     
-               </Link>
-               <Link href='https://github.com/HtooHtetAung666'>
-                    <a target='_blank'>
-                        <FaGithub className='w-6 h-6 text-[#ecf0f3] cursor-pointer lg:w-8 lg:h-8'/>
-                    </a>
-               </Link> 
+    <div className='mt-16 bg-gradient-to-r from-[#84329b] to-[#a65fec] items-center justify-center md:py-2 lg:space-y-4'>
+        <div className='flex items-center justify-center'>
+            <p className='text-center text-md px-4 pt-4 pb-1 text-[#ecf0f3] tracking-wide md:pt-4 md:text-lg'>Code with</p>
+            <div className='pt-4 pb-1'>
+                <AiFillHeart className='w-6 h-6 md:w-7 md:h-7 text-red-600'/>
             </div>
         </div>
         <p className='text-center text-md text-white px-4 pt-3 pb-4 mt-2 md:pb-4 md:text-lg lg:pt-0'>
