@@ -11,7 +11,7 @@ export const Skills = () => {
             <div className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-24 md:mx-16 lg:mt-32 lg:mx-30 xl:mx-32'>
 
                 <div className='mx-auto space-y-4'>
-                    <svg className='w-14 h-14 md:w-16 md:h-16' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 800 800" xmlSpace="preserve">
+                    <svg className='w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 800 800" xmlSpace="preserve">
                         <g>
                         <path 
                         fill="#FF2D20" d="M767.228,192.77c0.275,1.012,0.421,2.046,0.421,3.095v162.479c0,4.246-2.285,8.164-5.958,10.276
@@ -44,12 +44,12 @@ export const Skills = () => {
                 </div>
 
                 <div className='mx-auto space-y-4'>
-                    <FaReact className='w-14 h-14 md:w-16 md:h-16 text-[#61DBFB]'/>
+                    <FaReact className='w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 text-[#61DBFB]'/>
                     <p className='text-[#61DBFB] text-center md:text-lg lg:text-xl'>React</p>
                 </div>
 
                 <div className='mx-auto space-y-4'>
-                    <svg className='w-14 h-14 md:w-16 md:h-16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69">
+                    <svg className='w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69">
                         <path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883"></path>
                         <path d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z" fill="#34495e"></path>
                     </svg>
@@ -57,7 +57,7 @@ export const Skills = () => {
                 </div>
 
                 <div className='mx-auto space-y-4'>
-                    <svg className='w-14 h-14 md:w-16 md:h-16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <svg className='w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                         <linearGradient id="flutter_logo" x1="34.31" x2="21.223" y1="47.31" y2="34.223" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stopColor="#0176d0"></stop>
                         <stop offset=".454" stopColor="#0275ce"></stop>
