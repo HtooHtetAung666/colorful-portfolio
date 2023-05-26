@@ -5,9 +5,9 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useTheme } from 'next-themes';    
 
 export const Navbar = () => {
-    const [nav,setNav] = useState(false);
-    const [mounted,setMounted] = useState(false);
-    const {theme,setTheme} = useTheme();
+    const [nav, setNav] = useState(false);
+    const [mounted, setMounted] = useState(false);
+    const {theme, setTheme} = useTheme();
     
     useEffect(() => {
         setMounted(true)
@@ -51,7 +51,7 @@ export const Navbar = () => {
                         <input type="checkbox" className="sr-only peer" value={theme} onClick={()=>setTheme(theme === 'dark' ? 'light' : 'dark')} defaultChecked={theme==='dark'}/>
                         <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-[#fc8eac] rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-[#ecf0f3] after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-700"></div>
                     </label>
-
+                    
                     <button className='rounded-sm lg:hidden' onClick={handleNav}>
                         <AiOutlineMenu size={25} className='text-black'/>
                     </button>

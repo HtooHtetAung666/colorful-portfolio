@@ -13,12 +13,12 @@ export const Contact = () => {
 
         <div className='relative space-y-4 md:m-7  lg:m-0'>
 
-        <div className='p-5 bg-inherit rounded-lg flex items-center justify-center space-x-8 md:justify-between md:bg-[#e2dfd2]'>
+        <div className='p-5 bg-inherit rounded-lg flex items-center justify-center space-x-8 md:justify-between md:bg-[#060606]'>
           <h1 className='text-purple-400 tracking-widest text-xl md:tracking-normal md:text-2xl lg:text-3xl font-bold'>Contact Info</h1>
           <div className='hidden w-40 h-6 rounded-lg bg-purple-300 md:block'></div>
         </div>
 
-        <div className='p-5 bg-[#e2dfd2] rounded-lg flex items-center justify-center space-x-8 md:justify-between'>
+        <div className='p-5 bg-[#060606] rounded-lg flex items-center justify-center space-x-8 md:justify-between'>
           <div className='flex items-center space-x-3 px-5 md:px-0'>
             <AiOutlinePhone className='h-6 w-6 text-yellow-400 md:w-8 md:h-8'/>
             <p className='text-yellow-400 text-md md:text-lg lg:text-xl'>09-43202950</p>
@@ -26,7 +26,7 @@ export const Contact = () => {
           <div className='hidden w-36 h-6 rounded-lg bg-yellow-300 md:block'></div>
         </div>
 
-        <div className='p-5 bg-[#e2dfd2] rounded-lg flex items-center justify-center space-x-8 md:justify-between'>
+        <div className='p-5 bg-[#060606] rounded-lg flex items-center justify-center space-x-8 md:justify-between'>
           <div className='flex items-center space-x-3 px-5 md:px-0'>
             <AiOutlineMail className='h-6 w-6 text-pink-400 md:w-8 md:h-8'/>
             <p className='text-pink-400 text-md md:text-lg lg:text-xl'>hhawork039@gmail</p>
