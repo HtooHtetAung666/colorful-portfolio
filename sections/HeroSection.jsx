@@ -9,14 +9,14 @@ export const HeroSection = () => {
     <>
       <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#84329B] to-[#a65fec]'>
           <div className='px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60'>
-              <div>
-                <div className='flex items-center justify-center py-2 md:py-3 lg:justify-start lg:py-6'>
+              <div className='space-y-8 xl:space-y-10'>
+                <div className='flex items-center justify-center lg:justify-start'>
                   <h1 className='text-black text-xl mx-2 md:text-2xl lg:text-4xl'>
                     Hi 
                   </h1>
                   <MdOutlineWavingHand className='w-6 h-6 text-black mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle'/>
                 </div>
-                <h1 className='text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] font-bold text-xl py-2 md:py-3 md:text-2xl lg:text-start lg:text-4xl lg:py-4'>
+                <h1 className='text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] font-bold text-xl md:text-2xl lg:text-start lg:text-4xl'>
                   <TypeWriter
                     options={{
                       loop: true,
@@ -34,7 +34,7 @@ export const HeroSection = () => {
                     }}
                   />
                 </h1>
-                <div className='flex items-center justify-center md:justify-between space-x-5 py-2 lg:py-6'>
+                <div className='flex items-center justify-center md:justify-between space-x-5'>
                   <div className='flex items-center text-black space-x-1 lg:space-x-2'>
                     <BiWorld className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7'/>
                     <p className='md:text-lg lg:text-xl'>Web developer</p>

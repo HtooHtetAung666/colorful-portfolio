@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { WiAlien } from "react-icons/wi";
 import { Link } from 'react-scroll/modules';
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useTheme } from 'next-themes';    
 
 export const Navbar = () => {
@@ -34,17 +34,22 @@ export const Navbar = () => {
                 <div className='flex items-center space-x-5 mr-4 md:space-x-6 md:mr-5 lg:mr-0 lg:space-x-0'>
                     <ul className='hidden lg:flex items-center p-2 lg:py-4 lg:px-4'>
                         <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
-                            <li className='text-lg p-6 text-white hover:text-black'>Hobbies</li>
+                            <li className='text-lg p-5 text-white hover:text-black'>Hobbies</li>
                         </Link>
                         <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
-                            <li className='text-lg p-6 text-white hover:text-black'>Projects</li>
+                            <li className='text-lg p-5 text-white hover:text-black'>Projects</li>
                         </Link>
                         <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                            <li className='text-lg p-6 text-white hover:text-black'>Skills</li>
+                            <li className='text-lg p-5 text-white hover:text-black'>Skills</li>
                         </Link>
                         <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
-                            <li className='text-lg p-6 text-white hover:text-black'>Contact</li>
+                            <li className='text-lg p-5 text-white hover:text-black'>Contact</li>
                         </Link>
+                        <a href="https://docs.google.com/document/d/1jEGOgE3USzJMOL-9ATZ3C52BVVrlJTszrTAXkYnbmfU/edit?usp=sharing" target='_blank' rel='noreferrer'>
+                            <li className='text-lg p-5 text-white hover:text-black'>
+                                Resume
+                            </li>
+                        </a>
                     </ul>
 
                     <label className="relative inline-flex items-center cursor-pointer">
@@ -53,7 +58,7 @@ export const Navbar = () => {
                     </label>
                     
                     <button className='rounded-sm lg:hidden' onClick={handleNav}>
-                        <AiOutlineMenu size={25} className='text-black'/>
+                        <FaBars size={24} className='text-black'/>
                     </button>
                         
                 </div>
@@ -63,7 +68,7 @@ export const Navbar = () => {
 
             <div className={nav ? 'lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-slate-700/60' : ''}>
                 <div className={
-                    nav ? 'fixed left-0 top-0 w-[80%] md:w-[60%] z-[100] min-h-screen bg-white py-5 px-6 ease-in duration-500'
+                    nav ? 'fixed left-0 top-0 w-[80%] md:w-[70%] z-[100] min-h-screen bg-white py-5 px-6 ease-in duration-500'
                         : 'fixed left-[-100%] z-[100] min-h-screen top-0 py-5 px-6 ease-in duration-500'                
                 }>
                     <div>
@@ -72,30 +77,33 @@ export const Navbar = () => {
                                 <WiAlien size={76}/>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer' onClick={handleNav}>
-                                <AiOutlineClose size={22} className='text-black'/>
+                                <FaTimes size={24} className='text-black'/>
                             </div>
                         </div>
-                        <div className='border-b border-[#a65fec] my-4'>
+                        <div className='border-b border-[#84329b] my-4'>
                             <p className='w-[85%] md:w-[90%] py-4 text-black'>Always eager to build something new</p>
                         </div>
                     </div>
-                    <div className='py-4 flex-col'>
+                    <div className='py-4 flex-col text-black'>
                         <ul> 
                             <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm text-black'>Hobbies</li>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Hobbies</li>
                             </Link> 
                             <Link activeClass='active' to='projects' spy={true} smooth={true} offset={0} duration={600}>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm text-black'>Projects</li>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Projects</li>
                             </Link> 
                             <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm text-black'>Skills</li>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Skills</li>
                             </Link> 
                             <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm text-black'>Contact</li>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Contact</li>
                             </Link> 
+                            <a href="https://docs.google.com/document/d/1jEGOgE3USzJMOL-9ATZ3C52BVVrlJTszrTAXkYnbmfU/edit?usp=sharing" target='_blank' rel='noreferrer'>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Resume</li>
+                            </a>    
                         </ul>
                         <div className='mt-10'>
-                            <p className='text-[#a65fec] text-center'>&copy; Copyright 2022 htoohtet</p>
+                            <p className='text-[#84329b] text-center'>&copy; Copyright 2022 htoohtet</p>
                         </div>
                     </div>
                 </div>
