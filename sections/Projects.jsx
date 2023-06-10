@@ -1,82 +1,76 @@
 import React from 'react'
-import chatRoom from '../public/assets/projects/chatRoom.jpg'
-import technicalBlog from '../public/assets/projects/technicalBlog.png'
-import { ProjectItem } from '../components/ProjectItem'
-
-//copycat
-// import Link from "next/link"
-// import Image from 'next/image'
-// import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import Link from "next/link"
+import Image from 'next/image'
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+// import SlideUp from "./SlideUp"
 
 export const Projects = () => {
   const projects = [
     {
-      title: "chatRoom",
+      name: "Chat Room",
+      description: "Web app built with vue js and firebase where you can chat with friends.",
       image: "/assets/projects/chatRoom.jpg",
-      description: "lorem",
       github: "https://github.com/HtooHtetAung666/chat-room",
-      link: "https://chat-room-bce12.web.app/",
+      link: "",
     },
     {
-      title: "technicalBlog",
+      name: "Technical Blog",
+      description: "Web app built with laravel and bootstrap where you can read blogs about information technology",
       image: "/assets/projects/technicalBlog.png",
-      description: "lorem",
       github: "https://github.com/HtooHtetAung666/technical-blog",
       link: "",
     }
   ]
   return (
-    <div id='projects' className='w-full px-2 py-10 md:mt-64 md:mb-52 lg:mt-0 lg:mb-0'>
+    <div id='projects' className='w-full p-10 md:p-8 lg:p-16 md:mt-64 md:mb-24 lg:mt-0 lg:mb-0 lg:min-h-screen'>
+
       <h1 className='text-center tracking-widest text-slate-700 dark:text-[#ecf0f3] text-xl md:text-2xl lg:text-3xl font-bold'>Projects</h1>
-      <div className='grid md:grid-cols-2 gap-10 mt-10 p-5 md:mt-24 md:px-8 lg:px-4 lg:mt-32 xl:px-20'>
 
-        <ProjectItem title='chatRoom' backgroundImg={chatRoom} projectUrl='https://chat-room-bce12.web.app/' buildWith='Vue Js / Firebase'/>
-
-        <ProjectItem title='blog' backgroundImg={technicalBlog} projectUrl='' buildWith='Laravel / Bootstrap'/>
-
+      <div className='flex flex-col space-y-12 md:space-y-16 lg:space-y-28 mt-16 md:mt-24 lg:mt-30'> 
+        {projects.map((project,idx)=>{
+          return (
+              <div key={idx}>
+                {/* <SlideUp offset="-300px 0px -300px 0px"> */}
+                  <div className='flex flex-col animate-slideUpCub animation-delay-2 md:flex-row md:space-x-12'>
+                    <div className='md:w-1/2'>
+                      <div className=''>
+                        <Image
+                          src={project.image}
+                          width={700}
+                          height={400}
+                          className='rounded-xl shadow-xl hover:opacity-70'
+                        />
+                      </div>
+                    </div>
+                    <div className='mt-4 text-center md:text-left md:mt-0 md:w-1/2'>
+                      <h1 className='text-lg md:text-xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b]'>{project.name}</h1>
+                      <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b]'>{project.description}</p>
+                      <div className='flex flex-row justify-center md:justify-start align-bottom space-x-4'>
+                        <Link href={project.github}>
+                          <a target='_blank'>
+                            <BsGithub
+                              size={28}
+                              className='hover:-translate-y-1 transition-transform cursor-pointer'
+                            />
+                          </a>
+                        </Link>
+                        <Link href={project.link} target='_blank'>
+                        <a target='_blank'>
+                            <BsArrowUpRightSquare
+                              size={28}
+                              className='hover:-translate-y-1 transition-transform cursor-pointer'
+                            />
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                {/* </SlideUp> */}
+              </div>
+          )
+        })}
       </div>
 
-      {/* <div className='flex flex-col space-y-28'>
-      {projects.map((project,idx)=>{
-        return (
-          <div key={idx}>
-            <div className='flex flex-col'>
-              <div className='md:w-1/2'>
-                <Link href={project.link}>
-                  <Image
-                    src={project.image}
-                    alt=""
-                    width={1000}
-                    height={1000}
-                    className="rounded-xl shadow-xl hover:opacity-70"
-                  />
-                </Link>
-              </div>
-              <div className="mt-8 md:w-1/2">
-                <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                  {project.description}
-                </p>
-                <div className="flex flex-row align-bottom space-x-4">
-                  <Link href={project.github} target="_blank">
-                    <BsGithub
-                      size={30}
-                      className="hover:-translate-y-1 transition-transform cursor-pointer"
-                    />
-                  </Link>
-                  <Link href={project.link} target="_blank">
-                    <BsArrowUpRightSquare
-                      size={30}
-                      className="hover:-translate-y-1 transition-transform cursor-pointer"
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        )
-      })}
-      </div> */}
     </div>
   )
 }

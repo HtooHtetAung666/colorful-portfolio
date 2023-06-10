@@ -13,7 +13,8 @@ module.exports = {
         beat: "beat 1s ease-out infinite",
         wiggle: 'wiggle 1s ease-in-out infinite',
         handwiggle: 'wiggle 2s ease-in-out infinite',
-        up: 'up 3s linear infinite'
+        up: 'up 3s linear infinite',
+        slideUpCub: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
       },
       keyframes:{
         blob: {
@@ -52,10 +53,13 @@ module.exports = {
           "100%": {
             transform: "translateY(0)",
           }
-        }
+        },
+        slideUp: {
+          from: { transform: "translateY(100%)"},
+          to: { transform: "translateY(0)"},
+        },
       },
       colors: {
-        darkslateblue: '#5a4dae',
       },
     },
   },
