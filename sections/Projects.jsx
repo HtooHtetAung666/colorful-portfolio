@@ -2,7 +2,7 @@ import React from 'react'
 import Link from "next/link"
 import Image from 'next/image'
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
-// import SlideUp from "./SlideUp"
+// import { SlideUp } from '../components/SlideUp'
 
 export const Projects = () => {
   const projects = [
@@ -24,7 +24,7 @@ export const Projects = () => {
   return (
     <div id='projects' className='w-full p-10 md:p-8 lg:p-16 md:mt-64 md:mb-24 lg:mt-0 lg:mb-0 lg:min-h-screen'>
 
-      <h1 className='text-center tracking-widest text-slate-700 dark:text-[#ecf0f3] text-xl md:text-2xl lg:text-3xl font-bold'>Projects</h1>
+      <h1 className='text-center tracking-widest text-slate-800 dark:text-[#ecf0f3] text-xl md:text-2xl lg:text-3xl font-bold'>Projects</h1>
 
       <div className='flex flex-col space-y-12 md:space-y-16 lg:space-y-28 mt-16 md:mt-24 lg:mt-30'> 
         {projects.map((project,idx)=>{
@@ -36,21 +36,21 @@ export const Projects = () => {
                       <div className=''>
                         <Image
                           src={project.image}
-                          width={700}
+                          width={800}
                           height={400}
                           className='rounded-xl shadow-xl hover:opacity-70'
                         />
                       </div>
                     </div>
                     <div className='mt-4 text-center md:text-left md:mt-0 md:w-1/2'>
-                      <h1 className='text-lg md:text-xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b]'>{project.name}</h1>
-                      <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b]'>{project.description}</p>
+                      <h1 className='text-lg md:text-xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.name}</h1>
+                      <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.description}</p>
                       <div className='flex flex-row justify-center md:justify-start align-bottom space-x-4'>
                         <Link href={project.github}>
                           <a target='_blank'>
                             <BsGithub
                               size={28}
-                              className='hover:-translate-y-1 transition-transform cursor-pointer'
+                              className='hover:-translate-y-1 transition-transform cursor-pointer text-[#ff7e5f]'
                             />
                           </a>
                         </Link>
@@ -58,7 +58,7 @@ export const Projects = () => {
                         <a target='_blank'>
                             <BsArrowUpRightSquare
                               size={28}
-                              className='hover:-translate-y-1 transition-transform cursor-pointer'
+                              className='hover:-translate-y-1 transition-transform cursor-pointer text-[#ff7e5f]'
                             />
                           </a>
                         </Link>

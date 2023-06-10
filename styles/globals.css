@@ -24,7 +24,7 @@ html {
 @layer base {
   body {
     @apply p-0 m-0 tracking-wide bg-[#ecf0f3];
-    @apply dark:bg-slate-700;
+    @apply dark:bg-slate-800;
   }
   li {
     @apply cursor-pointer
