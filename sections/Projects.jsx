@@ -31,9 +31,9 @@ export const Projects = () => {
           return (
               <div key={idx}>
                 {/* <SlideUp offset="-300px 0px -300px 0px"> */}
-                  <div className='flex flex-col animate-slideUpCub animation-delay-2 md:flex-row md:space-x-12'>
+                  <div className='flex flex-col animate-slideUpCub animation-delay-2 md:flex-row md:space-x-12 lg:px-16'>
                     <div className='md:w-1/2'>
-                      <div className=''>
+                      <div className='p-4 md:p-0'>
                         <Image
                           src={project.image}
                           width={800}

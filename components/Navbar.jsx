@@ -31,7 +31,7 @@ export const Navbar = () => {
                 </div>
                     
                 {/* Navigation */}
-                <div className='flex items-center space-x-5 mr-4 md:space-x-6 md:mr-5 lg:mr-0 lg:space-x-0'>
+                <div className='flex items-center space-x-5 mr-3 md:space-x-6 md:mr-5 lg:mr-0 lg:space-x-0'>
                     <ul className='hidden lg:flex items-center p-2 lg:py-4 lg:px-4'>
                         <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                             <li className='text-lg p-5 text-white hover:text-black'>Hobbies</li>
@@ -60,7 +60,7 @@ export const Navbar = () => {
                     <button className='rounded-sm lg:hidden' onClick={handleNav}>
                         <FaBars size={24} className='text-black'/>
                     </button>
-                        
+                    
                 </div>
             </div>
 
