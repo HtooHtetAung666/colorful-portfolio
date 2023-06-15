@@ -40,7 +40,7 @@ export const Navbar = () => {
                             <li className='text-lg p-5 text-white hover:text-black'>Projects</li>
                         </Link>
                         <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                            <li className='text-lg p-5 text-white hover:text-black'>Skills</li>
+                            <li className='text-lg p-5 text-white hover:text-black'>Frameworks</li>
                         </Link>
                         <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
                             <li className='text-lg p-5 text-white hover:text-black'>Contact</li>

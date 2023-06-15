@@ -11,7 +11,7 @@ export const Projects = () => {
       description: "Web app built with vue js and firebase where you can chat with friends.",
       image: "/assets/projects/chatRoom.jpg",
       github: "https://github.com/HtooHtetAung666/chat-room",
-      link: "",
+      link: "https://chat-room-bce12.web.app/",
     },
     {
       name: "Technical Blog",
@@ -43,22 +43,22 @@ export const Projects = () => {
                       </div>
                     </div>
                     <div className='mt-4 text-center md:text-left md:mt-0 md:w-1/2'>
-                      <h1 className='text-lg md:text-xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.name}</h1>
+                      <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.name}</h1>
                       <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.description}</p>
                       <div className='flex flex-row justify-center md:justify-start align-bottom space-x-4'>
                         <Link href={project.github}>
                           <a target='_blank'>
                             <BsGithub
                               size={28}
-                              className='hover:-translate-y-1 transition-transform cursor-pointer text-[#ff7e5f]'
+                              className='hover:-translate-y-1 transition-transform cursor-pointer text-[#060606]'
                             />
                           </a>
                         </Link>
-                        <Link href={project.link} target='_blank'>
+                        <Link href={project.link ? project.link : '404'} target='_blank'>
                         <a target='_blank'>
                             <BsArrowUpRightSquare
                               size={28}
-                              className='hover:-translate-y-1 transition-transform cursor-pointer text-[#ff7e5f]'
+                              className='hover:-translate-y-1 transition-transform cursor-pointer text-[#060606]'
                             />
                           </a>
                         </Link>
