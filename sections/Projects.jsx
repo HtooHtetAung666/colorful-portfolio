@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from "next/link"
 import Image from 'next/image'
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
-// import { SlideUp } from '../components/SlideUp'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Projects = () => {
   const projects = [
@@ -21,6 +22,11 @@ export const Projects = () => {
       link: "",
     }
   ]
+
+  useEffect(()=>{
+    AOS.init();
+  }, [])
+
   return (
     <div id='projects' className='w-full p-10 md:p-8 lg:p-16 md:mt-64 md:mb-24 lg:mt-0 lg:mb-0 lg:min-h-screen'>
 
@@ -29,7 +35,7 @@ export const Projects = () => {
       <div className='flex flex-col space-y-12 md:space-y-16 lg:space-y-28 mt-16 md:mt-24 lg:mt-30'> 
         {projects.map((project,idx)=>{
           return (
-              <div key={idx}>
+              <div key={idx} data-aos="zoom-in-up" data-aos-duration="3000">
                 {/* <SlideUp offset="-300px 0px -300px 0px"> */}
                   <div className='flex flex-col animate-slideUpCub animation-delay-2 md:flex-row md:space-x-12 lg:px-16'>
                     <div className='md:w-1/2'>
