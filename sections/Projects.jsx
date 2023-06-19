@@ -35,43 +35,45 @@ export const Projects = () => {
       <div className='flex flex-col space-y-12 md:space-y-16 lg:space-y-28 mt-16 md:mt-24 lg:mt-30'> 
         {projects.map((project,idx)=>{
           return (
-              <div key={idx} data-aos="zoom-in-up" data-aos-duration="3000">
-                {/* <SlideUp offset="-300px 0px -300px 0px"> */}
-                  <div className='flex flex-col animate-slideUpCub animation-delay-2 md:flex-row md:space-x-12 lg:px-16'>
-                    <div className='md:w-1/2'>
-                      <div className='p-4 md:p-0'>
-                        <Image
-                          src={project.image}
-                          width={800}
-                          height={400}
-                          className='rounded-xl shadow-xl hover:opacity-70'
-                        />
+              <div key={idx}>
+                <div className='flex flex-col md:flex-row md:space-x-12 lg:px-16'>
+                      <div className='md:w-1/2' data-aos="flip-left" data-aos-duration="3000">
+                        <div className='p-4 md:p-0'>
+                          <Image
+                            src={project.image}
+                            width={800}
+                            height={400}
+                            className='rounded-xl shadow-xl hover:opacity-70'                          
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div className='mt-4 text-center md:text-left md:mt-0 md:w-1/2'>
-                      <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.name}</h1>
-                      <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.description}</p>
-                      <div className='flex flex-row justify-center md:justify-start align-bottom space-x-4'>
-                        <Link href={project.github}>
+                      <div 
+                        className='mt-4 text-center md:text-left md:mt-0 md:w-1/2' 
+                        data-aos="zoom-in-up"
+                        data-aos-duration="3000"
+                      >
+                        <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.name}</h1>
+                        <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.description}</p>
+                        <div className='flex flex-row justify-center md:justify-start align-bottom space-x-4'>
+                          <Link href={project.github}>
+                            <a target='_blank'>
+                              <BsGithub
+                                size={28}
+                                className='hover:-translate-y-1 transition-transform cursor-pointer text-[#060606]'
+                              />
+                            </a>
+                          </Link>
+                          <Link href={project.link ? project.link : '404'} target='_blank'>
                           <a target='_blank'>
-                            <BsGithub
-                              size={28}
-                              className='hover:-translate-y-1 transition-transform cursor-pointer text-[#060606]'
-                            />
-                          </a>
-                        </Link>
-                        <Link href={project.link ? project.link : '404'} target='_blank'>
-                        <a target='_blank'>
-                            <BsArrowUpRightSquare
-                              size={28}
-                              className='hover:-translate-y-1 transition-transform cursor-pointer text-[#060606]'
-                            />
-                          </a>
-                        </Link>
+                              <BsArrowUpRightSquare
+                                size={28}
+                                className='hover:-translate-y-1 transition-transform cursor-pointer text-[#060606]'
+                              />
+                            </a>
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                {/* </SlideUp> */}
+                </div>
               </div>
           )
         })}
