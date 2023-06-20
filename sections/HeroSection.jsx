@@ -7,7 +7,7 @@ import TypeWriter from "typewriter-effect";
 export const HeroSection = () => {
   return (
     <>
-      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#84329B] to-[#b372bd]'>
+      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#84329B] to-[#8b60ed]'>
           <div className='px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60'>
               <div className='space-y-8 xl:space-y-10'>
                 <div className='flex items-center justify-center lg:justify-start'>
@@ -48,7 +48,7 @@ export const HeroSection = () => {
               <img src="/assets/astronaut.svg" className="mx-auto w-72 h-72 md:w-80 md:h-80 mt-4 md:mx-0 md:mt-0 lg:w-5/12 lg:h-5/12 animate-up" alt="astronaut" />
           </div>
       </div>
-      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#84329b] to-[#a65fec] md:h-40 md:-mt-16 lg:-mt-20 xl:hidden'></div>
+      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#84329b] to-[#8b60ed] md:h-40 md:-mt-16 lg:-mt-20 xl:hidden'></div>
       <div className='w-full h-4 bg-gradient-to-r from-[#feb47b] to-[#ff7e5f] hidden xl:block'></div>
     </>
   )
