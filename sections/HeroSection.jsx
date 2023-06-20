@@ -7,7 +7,7 @@ import TypeWriter from "typewriter-effect";
 export const HeroSection = () => {
   return (
     <>
-      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#84329B] to-[#a65fec]'>
+      <div id='herosection' className='w-full h-full text-center bg-gradient-to-r from-[#84329B] to-[#b372bd]'>
           <div className='px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60'>
               <div className='space-y-8 xl:space-y-10'>
                 <div className='flex items-center justify-center lg:justify-start'>

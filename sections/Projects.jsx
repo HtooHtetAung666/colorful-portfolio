@@ -52,8 +52,8 @@ export const Projects = () => {
                         data-aos="zoom-in-up"
                         data-aos-duration="3000"
                       >
-                        <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.name}</h1>
-                        <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#a65fec]'>{project.description}</p>
+                        <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#b372bd]'>{project.name}</h1>
+                        <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#84329b] to-[#b372bd]'>{project.description}</p>
                         <div className='flex flex-row justify-center md:justify-start align-bottom space-x-4'>
                           <Link href={project.github}>
                             <a target='_blank'>
