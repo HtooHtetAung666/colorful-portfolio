@@ -22,7 +22,7 @@ export const Navbar = () => {
     }
 
     return (
-        <div className='w-full h-16 bg-gradient-to-r from-[#84329b] to-[#a65fec]'>
+        <div className='w-full h-16 bg-gradient-to-r from-[#84329b] to-[#8b60ed]'>
             <div className='flex justify-between items-center w-full h-full px-2 pt-4 md:px-4 lg:pl-5 lg:pr-16 lg:py-12'>
                 
                 {/* logo */}
