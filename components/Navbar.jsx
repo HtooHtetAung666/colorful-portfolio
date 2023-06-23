@@ -10,8 +10,12 @@ export const Navbar = () => {
     const {theme, setTheme} = useTheme();
     
     useEffect(() => {
+        if (nav) 
+            document.body.style.overflow = 'hidden';
+        else
+            document.body.style.overflow = 'visible';
         setMounted(true)
-    }, [])
+    }, [nav])
 
     if (!mounted) {
         return null
