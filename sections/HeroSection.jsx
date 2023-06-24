@@ -50,8 +50,8 @@ export const HeroSection = () => {
       </div>
 
 
-      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#84329b] to-[#8b60ed] md:h-40 md:-mt-16 lg:-mt-20 xl:hidden'></div>
-      <div className='w-full h-2 bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] 3xl:h-4 hidden xl:block'></div>
+      <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#84329b] to-[#8b60ed] md:h-40 md:-mt-16 lg:-mt-20 lg:hidden'></div>
+      <div className='w-full h-2 bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] hidden lg:block 2xl:h-4'></div>
 
     </>
   )
