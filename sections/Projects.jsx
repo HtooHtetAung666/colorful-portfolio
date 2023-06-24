@@ -61,7 +61,7 @@ export const Projects = () => {
                             <a target='_blank'>
                               <BsGithub
                                 size={28}
-                                className='hover:-translate-y-1 transition-transform cursor-pointer text-[#060606]'
+                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-[#060606]'
                               />
                             </a>
                           </Link>
@@ -69,7 +69,7 @@ export const Projects = () => {
                           <a target='_blank'>
                               <BsArrowUpRightSquare
                                 size={28}
-                                className='hover:-translate-y-1 transition-transform cursor-pointer text-[#060606]'
+                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-[#060606]'
                               />
                             </a>
                           </Link>
