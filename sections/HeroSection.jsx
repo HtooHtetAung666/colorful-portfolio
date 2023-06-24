@@ -51,7 +51,7 @@ export const HeroSection = () => {
 
 
       <div className='w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#84329b] to-[#8b60ed] md:h-40 md:-mt-16 lg:-mt-20 lg:hidden'></div>
-      <div className='w-full h-4 bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] hidden lg:block'></div>
+      <div className='w-full h-4 bg-gradient-to-r from-[#84329b] via-[#b372bd] to-[#8b60ed] hidden lg:block'></div>
 
     </>
   )
