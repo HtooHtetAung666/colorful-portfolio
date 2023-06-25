@@ -30,15 +30,15 @@ export const Projects = () => {
   return (
     <div id='projects' className='w-full p-10 md:p-8 lg:p-16 md:mt-64 md:mb-24 lg:mt-0 lg:mb-0 lg:min-h-screen'>
 
-      <h1 className='text-center tracking-widest text-slate-800 dark:text-[#ecf0f3] text-xl md:text-2xl lg:text-3xl font-bold'>Projects</h1>
+      <h1 className='text-center tracking-widest text-black dark:text-white text-xl md:text-2xl lg:text-3xl font-bold'>Projects</h1>
 
       <div className='flex flex-col space-y-12 md:space-y-16 lg:space-y-28 mt-16 md:mt-24 lg:mt-30'> 
         {projects.map((project,idx)=>{
           return (
               <div key={idx}>
-                <div className='flex flex-col md:flex-row md:space-x-12 lg:px-16'>
-                      <div className='md:w-1/2' data-aos="flip-left" data-aos-duration="3000">
-                        <div className='p-4 md:p-0'>
+                <div className='flex flex-col lg:flex-row lg:space-x-12 lg:px-16'>
+                      <div className='lg:w-1/2' data-aos="flip-left" data-aos-duration="3000">
+                        <div className='p-4 md:px-24 md:py-0 lg:p-0'>
                           <Image
                             src={project.image}
                             width={800}
@@ -48,20 +48,20 @@ export const Projects = () => {
                         </div>
                       </div>
                       <div 
-                        className='mt-4 text-center md:text-left md:mt-0 md:w-1/2' 
+                        className='mt-4 text-center lg:text-left lg:mt-0 lg:w-1/2' 
                         data-aos="zoom-in-up"
                         data-aos-duration="3000"
                       >
 
-                        <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold text-[#b372bd]'>{project.name}</h1>
-                        <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 text-[#b372bd]'>{project.description}</p>
+                        <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold text-black dark:text-white'>{project.name}</h1>
+                        <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 text-black dark:text-white'>{project.description}</p>
 
-                        <div className='flex flex-row justify-center md:justify-start align-bottom space-x-4'>
+                        <div className='flex flex-row justify-center lg:justify-start align-bottom space-x-4'>
                           <Link href={project.github}>
                             <a target='_blank'>
                               <BsGithub
                                 size={28}
-                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-[#060606]'
+                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-black dark:text-white'
                               />
                             </a>
                           </Link>
@@ -69,7 +69,7 @@ export const Projects = () => {
                           <a target='_blank'>
                               <BsArrowUpRightSquare
                                 size={28}
-                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-[#060606]'
+                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-black dark:text-white'
                               />
                             </a>
                           </Link>
