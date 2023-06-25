@@ -53,15 +53,15 @@ export const Projects = () => {
                         data-aos-duration="3000"
                       >
 
-                        <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold text-black dark:text-white'>{project.name}</h1>
-                        <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 text-black dark:text-white'>{project.description}</p>
+                        <h1 className='text-lg md:text-xl lg:text-2xl 3xl:text-4xl font-bold text-[#a65fec]'>{project.name}</h1>
+                        <p className='mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 text-[#a65fec]'>{project.description}</p>
 
                         <div className='flex flex-row justify-center lg:justify-start align-bottom space-x-4'>
                           <Link href={project.github}>
                             <a target='_blank'>
                               <BsGithub
                                 size={28}
-                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-black dark:text-white'
+                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-[#a65fec]'
                               />
                             </a>
                           </Link>
@@ -69,7 +69,7 @@ export const Projects = () => {
                           <a target='_blank'>
                               <BsArrowUpRightSquare
                                 size={28}
-                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-black dark:text-white'
+                                className='hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-[#a65fec]'
                               />
                             </a>
                           </Link>

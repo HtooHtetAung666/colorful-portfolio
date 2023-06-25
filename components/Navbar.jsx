@@ -58,7 +58,7 @@ export const Navbar = () => {
 
                     <label className="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" className="sr-only peer" value={theme} onClick={()=>setTheme(theme === 'dark' ? 'light' : 'dark')} defaultChecked={theme==='dark'}/>
-                        <div className="w-11 h-6 bg-[#ecf0f3] ring-2 ring-[#fc8eac] rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-[#ecf0f3] after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"></div>
+                        <div className="w-11 h-6 bg-[#ecf0f3] ring-1 ring-[#fc8eac] rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-[#ecf0f3] after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"></div>
                     </label>
                     
                     <button className='rounded-sm lg:hidden' onClick={handleNav}>
@@ -88,7 +88,7 @@ export const Navbar = () => {
                             <p className='w-[85%] md:w-[90%] py-4 text-slate-800'>Always eager to build something new</p>
                         </div>
                     </div>
-                    <div className='py-4 flex-col text-slate-800'>
+                    <div className='py-2 flex-col text-slate-800'>
                         <ul> 
                             <Link activeClass='active' to='hobbies' spy={true} smooth={true} offset={0} duration={600}>
                                 <li onClick={()=>setNav(false)} className='py-4 text-sm'>Hobbies</li>
@@ -97,7 +97,7 @@ export const Navbar = () => {
                                 <li onClick={()=>setNav(false)} className='py-4 text-sm'>Projects</li>
                             </Link> 
                             <Link activeClass='active' to='skills' spy={true} smooth={true} offset={0} duration={600}>
-                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Skills</li>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Frameworks</li>
                             </Link> 
                             <Link activeClass='active' to='contact' spy={true} smooth={true} offset={0} duration={600}>
                                 <li onClick={()=>setNav(false)} className='py-4 text-sm'>Contact</li>

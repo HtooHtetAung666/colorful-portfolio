@@ -8,7 +8,7 @@ const Hobbies = () => {
             <div id='hobbies' className='w-full h-full my-28 p-4 md:my-32 md:pt-28 lg:min-h-screen'>
 
                 <img 
-                    src="/assets/3dicons/Atom_Icosa_1_0000.png" 
+                    src="/assets/3dicons/Atom_Icosa_2_0000.png" 
                     alt="" 
                     className='absolute top-0 left-0 w-32 h-32 -mt-12 md:w-44 md:h-44 md:-mt-0 md:ml-5 lg:w-60 lg:h-60 lg:ml-16'
                 />
