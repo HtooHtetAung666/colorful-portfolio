@@ -27,11 +27,11 @@ export const Navbar = () => {
 
     return (
         <div className='w-full h-16 bg-gradient-to-r from-[#84329b] to-[#8b60ed]'>
-            <div className='flex justify-between items-center w-full h-full px-2 pt-4 md:px-4 lg:pl-5 lg:pr-16 lg:py-12'>
+            <div className='flex justify-between items-center w-full h-full pl-1 pr-2 pt-4 md:px-3 lg:pl-3 lg:pr-12 lg:py-12'>
                 
                 {/* logo */}
                 <div className='text-[#fc8eac]'>
-                    <WiAlien size={86} className='p-2 lg:p-1'/>
+                    <WiAlien className='w-20 h-20 p-2 md:p-1'/>
                 </div>
                     
                 {/* Navigation */}

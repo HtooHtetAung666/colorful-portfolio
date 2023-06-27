@@ -48,7 +48,7 @@ const Hobbies = () => {
 
                 <img 
                     className='absolute left-0 w-32 h-32 -mt-12 md:w-44 md:h-44 md:mt-4 md:ml-48 lg:w-60 lg:h-60 lg:ml-96 lg:mt-16'
-                    src="/assets/shapefest/Clay_Orange0070.png" 
+                    src="/assets/shapefest/Clay_Black0024.png" 
                     alt="" 
                 />
 
