@@ -16,7 +16,7 @@ export const HeroSection = () => {
                   </h1>
                   <MdOutlineWavingHand className='w-6 h-6 font-bold text-[#060606] mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle'/>
                 </div>
-                <h1 className='text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] font-bold text-xl md:text-2xl lg:text-start lg:text-4xl'>
+                <h1 className='text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] font-bold text-xl md:text-2xl lg:text-start lg:text-4xl'>
                   <TypeWriter
                     options={{
                       loop: true,
@@ -34,14 +34,14 @@ export const HeroSection = () => {
                     }}
                   />
                 </h1>
-                <div className='flex items-center justify-center md:justify-between space-x-5'>
-                  <div className='flex items-center font-bold text-[#060606] space-x-1 lg:space-x-2'>
+                <div className='flex items-center justify-center md:justify-between space-x-4 md:space-x-5'>
+                  <div className='flex items-center text-[#060606] space-x-1 lg:space-x-2'>
                     <BiWorld className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7'/>
-                    <p className='md:text-lg lg:text-xl'>Web developer</p>
+                    <p className='text-sm md:text-lg lg:text-xl'>Web developer</p>
                   </div>
-                  <div className='flex items-center font-bold text-[#060606] space-x-1 lg:space-x-2'>
+                  <div className='flex items-center text-[#060606] space-x-1 lg:space-x-2'>
                     <AiOutlineMobile className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7'/>
-                    <p className='md:text-lg lg:text-xl'>App developer</p>
+                    <p className='text-sm md:text-lg lg:text-xl'>App developer</p>
                   </div>
                 </div>
               </div>    
