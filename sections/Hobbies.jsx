@@ -8,8 +8,8 @@ const Hobbies = () => {
             <div id='hobbies' className='w-full h-full my-28 p-4 md:my-32 md:pt-28 lg:min-h-screen'>
 
                 <img 
-                    src="/assets/shapefest/Atom_Icosa_2_0000.png" 
-                    alt="" 
+                    src='/assets/shapefest/Clay_White0011.png' 
+                    alt='clay_white' 
                     className='absolute top-0 left-0 w-32 h-32 -mt-12 md:w-44 md:h-44 md:-mt-0 md:ml-5 lg:w-60 lg:h-60 lg:ml-16'
                 />
 
@@ -33,8 +33,8 @@ const Hobbies = () => {
 
                     <img 
                         className='absolute top-0 right-0 w-32 h-32 mt-52 md:mt-10 md:w-44 md:h-44 md:mr-4 lg:w-60 lg:h-60 lg:mr-8'
-                        src="/assets/shapefest/Clay_Purple0005.png" 
-                        alt=''
+                        src='/assets/shapefest/Clay_Purple0005.png' 
+                        alt='clay_purple'
                     />
 
                     <div className='mx-auto space-y-4'>
@@ -48,8 +48,8 @@ const Hobbies = () => {
 
                 <img 
                     className='absolute left-0 w-32 h-32 -mt-12 md:w-44 md:h-44 md:mt-4 md:ml-48 lg:w-60 lg:h-60 lg:ml-96 lg:mt-16'
-                    src="/assets/shapefest/Clay_Black0024.png" 
-                    alt="" 
+                    src='/assets/shapefest/Clay_Orange0024.png' 
+                    alt='clay_orange' 
                 />
 
             </div>

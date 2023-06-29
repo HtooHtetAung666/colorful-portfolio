@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className='flex items-center justify-center'>
             <p className='text-center text-md px-4 pt-4 pb-1 text-[#dcf2ff] tracking-wide md:pt-4 md:text-lg'>Code with</p>
             <div className='pt-4 pb-1'>
-                <AiFillHeart className='w-6 h-6 md:w-7 md:h-7 text-red-600'/>
+                <AiFillHeart className='w-6 h-6 md:w-7 md:h-7 text-[#fc8eac]'/>
             </div>
         </div>
         <p className='text-center text-md text-[#dcf2ff] px-4 pt-3 pb-4 mt-1 md:pb-4 md:text-lg lg:pt-0'>
