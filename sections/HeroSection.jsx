@@ -16,7 +16,7 @@ export const HeroSection = () => {
                   </h1>
                   <MdOutlineWavingHand className='w-6 h-6 font-bold text-[#060606] mx-2 md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle'/>
                 </div>
-                <h1 className='text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] font-bold text-xl md:text-2xl lg:text-start lg:text-4xl'>
+                <h1 className='text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] font-bold text-xl md:text-2xl lg:text-start lg:text-4xl'>
                   <TypeWriter
                     options={{
                       loop: true,
