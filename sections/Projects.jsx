@@ -24,7 +24,7 @@ export const Projects = () => {
       {
         id:2,
         name: "Technical Blog",
-        description: "Web app built with laravel and bootstrap where you can read blogs about information technology",
+        description: "Web app built with laravel and bootstrap where you can read blogs about information technology.",
         image: "/assets/projects/technicalBlog.png",
         github: "https://github.com/HtooHtetAung666/technical-blog",
         link: "",
@@ -33,9 +33,9 @@ export const Projects = () => {
     Mobile : [
       {
         id: 1,
-        name: "Not Yet xD",
-        description: "Comming soon.",
-        image: "/assets/projects/404.png",
+        name: "Comming Soon",
+        description: "I am working on it xD",
+        image: "/assets/projects/blur.jpg",
         github: "",
         link: "",
       }

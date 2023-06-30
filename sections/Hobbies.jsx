@@ -32,7 +32,7 @@ const Hobbies = () => {
                     </div>
 
                     <img 
-                        className='absolute top-0 right-0 w-32 h-32 mt-52 md:mt-10 md:w-44 md:h-44 md:mr-4 lg:w-60 lg:h-60 lg:mr-8'
+                        className='absolute top-0 right-0 w-32 h-32 mt-44 md:mt-10 md:w-44 md:h-44 md:mr-4 lg:w-60 lg:h-60 lg:mr-8'
                         src='/assets/shapefest/Clay_Purple0005.png' 
                         alt='clay_purple'
                     />
@@ -47,7 +47,13 @@ const Hobbies = () => {
                 </div>
 
                 <img 
-                    className='absolute left-0 w-32 h-32 -mt-12 md:w-44 md:h-44 md:mt-4 md:ml-48 lg:w-60 lg:h-60 lg:ml-96 lg:mt-16'
+                    className='absolute bottom-0 right-0 w-32 h-32 mb-16 md:-mb-28 md:mr-16 md:w-44 md:h-44 lg:w-60 lg:h-60 lg:-mb-12 lg:mr-44'
+                    src='/assets/shapefest/Clay_Black0011.png' 
+                    alt='clay_black' 
+                />
+
+                <img 
+                    className='absolute left-0 w-32 h-32 -mt-12 md:w-44 md:h-44 md:mt-4 md:ml-48 lg:w-60 lg:h-60 lg:ml-80 lg:mt-16'
                     src='/assets/shapefest/Clay_Orange0024.png' 
                     alt='clay_orange' 
                 />
