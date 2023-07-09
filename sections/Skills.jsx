@@ -1,32 +1,44 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import { FaReact } from "react-icons/fa";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Skills = () => {
-  
-    useEffect(()=>{
-        AOS.init();
-    },[])
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-    return (
-        <div id='skills' className='w-full h-full my-16 p-4 md:mt-16 md:mb-64 md:pt-28'>
-            <div className='mx-auto flex flex-col justify-center'>
+  return (
+    <div
+      id="skills"
+      className="w-full h-full my-16 p-4 md:mt-16 md:mb-64 md:pt-28"
+    >
+      <div className="mx-auto flex flex-col justify-center">
+        <h1 className="text-center tracking-widest text-black dark:text-white text-xl md:text-2xl lg:text-3xl font-bold">
+          Frameworks
+        </h1>
 
-                <h1 className='text-center tracking-widest text-black dark:text-white text-xl md:text-2xl lg:text-3xl font-bold'>Frameworks</h1>
-
-                <div className='mt-10 p-4 grid gap-14 md:grid-cols-4 md:mt-24 md:mx-16 lg:mt-32 lg:mx-30 xl:mx-32'>
-
-                    <div 
-                        className='mx-auto space-y-4' 
-                        data-aos='zoom-in-up'
-                        data-aos-duration='2000'
-                        data-aos-once='true'
-                    >
-                        <svg className='w-14 h-14 md:w-16 md:h-16 3xl:w-20 3xl:h-20' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" enableBackground="new 0 0 800 800" xmlSpace="preserve">
-                            <g>
-                            <path 
-                            fill="#FF2D20" d="M767.228,192.77c0.275,1.012,0.421,2.046,0.421,3.095v162.479c0,4.246-2.285,8.164-5.958,10.276
+        <div className="mt-10 p-4 grid gap-16 lg:gap-14 md:grid-cols-4 md:mt-24 md:mx-16 lg:mt-32 lg:mx-30 xl:mx-32">
+          <div
+            className="mx-auto space-y-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
+            <svg
+              className="w-14 h-14 lg:w-16 lg:h-16"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 800 800"
+              enableBackground="new 0 0 800 800"
+              xmlSpace="preserve"
+            >
+              <g>
+                <path
+                  fill="#FF2D20"
+                  d="M767.228,192.77c0.275,1.012,0.421,2.046,0.421,3.095v162.479c0,4.246-2.285,8.164-5.958,10.276
                                                 l-136.369,78.517v155.618c0,4.236-2.256,8.141-5.93,10.267L334.737,776.897c-0.652,0.375-1.36,0.606-2.076,0.866
                                                 c-0.262,0.086-0.514,0.245-0.796,0.318c-1.987,0.521-4.084,0.521-6.073,0c-0.325-0.087-0.621-0.26-0.933-0.376
                                                 c-0.65-0.245-1.33-0.447-1.953-0.809L38.302,613.021c-3.68-2.112-5.95-6.017-5.95-10.267V115.323c0-1.063,0.145-2.105,0.412-3.11
@@ -49,60 +61,103 @@ export const Skills = () => {
                                                 M248.199,473.021l68.785-39.608V135.83l-49.804,28.675l-68.799,39.61v297.584L248.199,473.021z M613.477,127.614l-118.568,68.25
                                                 l118.568,68.25l118.539-68.264L613.477,127.614z M601.604,284.656l-68.791-39.615l-49.791-28.663V351.49l68.778,39.594
                                                 l49.804,28.677V284.656z M328.813,589.131l173.905-99.275l86.911-49.618L471.163,372.04l-136.398,78.525l-124.315,71.583
-                                                L328.813,589.131z"></path>
-                            </g>
-                        </svg>
-                        <p className='text-[#F05340] text-center md:text-lg lg:text-xl'>Laravel</p>
-                    </div>
+                                                L328.813,589.131z"
+                ></path>
+              </g>
+            </svg>
+            <p className="text-[#F05340] text-center md:text-lg lg:text-xl">
+              Laravel
+            </p>
+          </div>
 
-                    <div 
-                        className='mx-auto space-y-4'
-                        data-aos='zoom-in-up'
-                        data-aos-duration='2000'
-                        data-aos-once='true'
-                    >
-                        <FaReact className='w-14 h-14 md:w-16 md:h-16 3xl:w-20 3xl:h-20 text-[#61DBFB]'/>
-                        <p className='text-[#61DBFB] text-center md:text-lg lg:text-xl'>React</p>
-                    </div>
+          <div
+            className="mx-auto space-y-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
+            <FaReact className="w-14 h-14 lg:w-16 lg:h-16 text-[#61DBFB]" />
+            <p className="text-[#61DBFB] text-center md:text-lg lg:text-xl">
+              React
+            </p>
+          </div>
 
-                    <div 
-                        className='mx-auto space-y-4'
-                        data-aos='zoom-in-up'
-                        data-aos-duration='2000'
-                        data-aos-once='true'
-                    >
-                        <svg className='w-14 h-14 md:w-16 md:h-16 3xl:w-20 3xl:h-20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69">
-                            <path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883"></path>
-                            <path d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z" fill="#34495e"></path>
-                        </svg>
-                        <p className='text-[#41B883] text-center md:text-lg lg:text-xl'>Vue</p>
-                    </div>
+          <div
+            className="mx-auto space-y-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
+            <svg
+              className="w-14 h-14 lg:w-16 lg:h-16"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 261.76 226.69"
+            >
+              <path
+                d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z"
+                fill="#41b883"
+              ></path>
+              <path
+                d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z"
+                fill="#34495e"
+              ></path>
+            </svg>
+            <p className="text-[#41B883] text-center md:text-lg lg:text-xl">
+              Vue
+            </p>
+          </div>
 
-                    <div 
-                        className='mx-auto space-y-4'
-                        data-aos='zoom-in-up'
-                        data-aos-duration='2000'
-                        data-aos-once='true'
-                    >
-                        <svg className='w-14 h-14 md:w-16 md:h-16 3xl:w-20 3xl:h-20' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                            <linearGradient id="flutter_logo" x1="34.31" x2="21.223" y1="47.31" y2="34.223" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stopColor="#0176d0"></stop>
-                            <stop offset=".454" stopColor="#0275ce"></stop>
-                            <stop offset=".617" stopColor="#0472c7"></stop>
-                            <stop offset=".733" stopColor="#076bbc"></stop>
-                            <stop offset=".827" stopColor="#0d63ab"></stop>
-                            <stop offset=".907" stopColor="#135895"></stop>
-                            <stop offset=".933" stopColor="#16538c"></stop>
-                            </linearGradient>
-                            <polygon fill="url(#flutter_logo)" points="37,44 25,44 14,33 20,27"></polygon>
-                            <polygon fill="#50e6ff" points="5,24 25,4 37,4 11,30"></polygon>
-                            <polygon fill="#50e6ff" points="37,22 20,39 14,33 25,22"></polygon>
-                            <rect width="8.485" height="8.485" x="15.757" y="28.757" fill="#35c1f1" transform="rotate(-45.001 20 33)"></rect>
-                        </svg>
-                        <p className='text-[#027DFD] text-center md:text-lg lg:text-xl'>Flutter</p>
-                    </div>
-                </div>
-            </div>
+          <div
+            className="mx-auto space-y-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
+            <svg
+              className="w-14 h-14 lg:w-16 lg:h-16"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48 48"
+            >
+              <linearGradient
+                id="flutter_logo"
+                x1="34.31"
+                x2="21.223"
+                y1="47.31"
+                y2="34.223"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stopColor="#0176d0"></stop>
+                <stop offset=".454" stopColor="#0275ce"></stop>
+                <stop offset=".617" stopColor="#0472c7"></stop>
+                <stop offset=".733" stopColor="#076bbc"></stop>
+                <stop offset=".827" stopColor="#0d63ab"></stop>
+                <stop offset=".907" stopColor="#135895"></stop>
+                <stop offset=".933" stopColor="#16538c"></stop>
+              </linearGradient>
+              <polygon
+                fill="url(#flutter_logo)"
+                points="37,44 25,44 14,33 20,27"
+              ></polygon>
+              <polygon fill="#50e6ff" points="5,24 25,4 37,4 11,30"></polygon>
+              <polygon
+                fill="#50e6ff"
+                points="37,22 20,39 14,33 25,22"
+              ></polygon>
+              <rect
+                width="8.485"
+                height="8.485"
+                x="15.757"
+                y="28.757"
+                fill="#35c1f1"
+                transform="rotate(-45.001 20 33)"
+              ></rect>
+            </svg>
+            <p className="text-[#027DFD] text-center md:text-lg lg:text-xl">
+              Flutter
+            </p>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
