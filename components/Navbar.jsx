@@ -24,10 +24,10 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-16 bg-gradient-to-r from-[#84329b] to-[#8b60ed]">
+    <div className="w-full h-16 bg-gradient-to-r from-purple-dark to-purple-light">
       <div className="flex items-center justify-between w-full h-full pl-1 pr-2 pt-4 md:px-3 lg:pl-3 lg:pr-12 lg:py-12">
         {/* logo */}
-        <div className="text-[#fc8eac]">
+        <div className="text-flamingo">
           <WiAlien className="w-16 h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-2" />
         </div>
 
@@ -101,7 +101,7 @@ export const Navbar = () => {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               defaultChecked={theme === "dark"}
             />
-            <div className="w-11 h-6 bg-[#ecf0f3] ring-1 ring-[#fc8eac] rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-[#ecf0f3] after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"></div>
+            <div className="w-11 h-6 bg-pearl ring-1 ring-flamingo rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-pearl after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"></div>
           </label>
 
           <button className="rounded-sm lg:hidden" onClick={handleNav}>
@@ -122,13 +122,13 @@ export const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[80%] md:w-[70%] z-[100] min-h-screen bg-[#ecf0f3] py-5 px-6 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[80%] md:w-[70%] z-[100] min-h-screen bg-pearl py-5 px-6 ease-in duration-500"
               : "fixed left-[-100%] z-[100] min-h-screen top-0 py-5 px-6 ease-in duration-500"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <div className="text-[#fc8eac]">
+              <div className="text-flamingo">
                 <WiAlien size={76} />
               </div>
               <div
@@ -138,7 +138,7 @@ export const Navbar = () => {
                 <FaTimes size={21} className="text-slate-800" />
               </div>
             </div>
-            <div className="border-b border-[#fc8eac] my-4">
+            <div className="border-b border-flamingo my-4">
               <p className="w-[85%] md:w-[90%] py-4 text-slate-800">
                 Always eager to build something new
               </p>
@@ -205,7 +205,7 @@ export const Navbar = () => {
               </a>
             </ul>
             <div className="mt-5">
-              <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#84329B] to-[#a65fec] text-center uppercase">
+              <p className="bg-clip-text text-transparent bg-gradient-to-r from-purple-dark to-purple-light text-center uppercase">
                 2022 &copy; | htoohtet
               </p>
             </div>

@@ -65,7 +65,7 @@ export const Skills = () => {
                 ></path>
               </g>
             </svg>
-            <p className="text-[#F05340] text-center md:text-lg lg:text-xl">
+            <p className="text-laravel text-center md:text-lg lg:text-xl">
               Laravel
             </p>
           </div>
@@ -76,8 +76,8 @@ export const Skills = () => {
             data-aos-duration="2000"
             data-aos-once="true"
           >
-            <FaReact className="w-14 h-14 lg:w-16 lg:h-16 text-[#61DBFB]" />
-            <p className="text-[#61DBFB] text-center md:text-lg lg:text-xl">
+            <FaReact className="w-14 h-14 lg:w-16 lg:h-16 text-react" />
+            <p className="text-react text-center md:text-lg lg:text-xl">
               React
             </p>
           </div>
@@ -102,7 +102,7 @@ export const Skills = () => {
                 fill="#34495e"
               ></path>
             </svg>
-            <p className="text-[#41B883] text-center md:text-lg lg:text-xl">
+            <p className="text-vue text-center md:text-lg lg:text-xl">
               Vue
             </p>
           </div>
@@ -152,7 +152,7 @@ export const Skills = () => {
                 transform="rotate(-45.001 20 33)"
               ></rect>
             </svg>
-            <p className="text-[#027DFD] text-center md:text-lg lg:text-xl">
+            <p className="text-flutter text-center md:text-lg lg:text-xl">
               Flutter
             </p>
           </div>

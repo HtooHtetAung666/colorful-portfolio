@@ -16,7 +16,7 @@ module.exports = {
         up: 'up 3s linear infinite',
         slideUpCub: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
       },
-      keyframes:{
+      keyframes: {
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
@@ -55,11 +55,29 @@ module.exports = {
           }
         },
         slideUp: {
-          from: { transform: "translateY(100%)"},
-          to: { transform: "translateY(0)"},
+          from: { transform: "translateY(100%)" },
+          to: { transform: "translateY(0)" },
         },
       },
       colors: {
+        'laravel': '#f05340',
+        'react': '#61dbfb',
+        'vue': '#41b883',
+        'flutter': '#027dfd',
+        'purple': {
+          light: '#8b60ed',
+          DEFAULT: '#a65fec',
+          dark: '#84329B',
+        },
+        'orange': {
+          light: '#feb47b',
+          dark: '#ff7e5f'
+        },
+        'cursed-black': '#060606',
+        'creator-light': '#dcf2ff',
+        'flamingo': '#fc8eac',
+        'pearl': '#ecf0f3',
+        'link': '#ecf0f3',
       },
     },
   },

@@ -9,17 +9,17 @@ export const HeroSection = () => {
     <>
       <div
         id="herosection"
-        className="w-full h-full text-center bg-gradient-to-r from-[#84329B] to-[#8b60ed]"
+        className="w-full h-full text-center bg-gradient-to-r from-purple-dark to-purple-light"
       >
         <div className="px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60">
           <div className="space-y-8 xl:space-y-10">
             <div className="flex items-center space-x-2 justify-center lg:space-x-4 lg:justify-start">
-              <h1 className="text-[#060606] font-bold text-xl md:text-2xl lg:text-4xl">
+              <h1 className="text-cursed-black font-bold text-xl md:text-2xl lg:text-4xl">
                 Hi
               </h1>
-              <MdOutlineWavingHand className="w-6 h-6 font-bold text-[#060606] md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle" />
+              <MdOutlineWavingHand className="w-6 h-6 font-bold text-cursed-black md:w-8 md:h-8 lg:w-10 lg:h-10 animate-handwiggle" />
             </div>
-            <h1 className="text-center bg-clip-text text-transparent bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] font-bold text-xl md:text-2xl lg:text-start lg:text-4xl">
+            <h1 className="text-center bg-clip-text text-transparent bg-gradient-to-r from-orange-dark to-orange-light font-bold text-xl md:text-2xl lg:text-start lg:text-4xl">
               <TypeWriter
                 options={{
                   loop: true,
@@ -38,11 +38,11 @@ export const HeroSection = () => {
               />
             </h1>
             <div className="flex items-center justify-center md:justify-between space-x-4 md:space-x-5">
-              <div className="flex items-center text-[#060606] space-x-1 lg:space-x-2">
+              <div className="flex items-center text-cursed-black space-x-1 lg:space-x-2">
                 <BiWorld className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
                 <p className="text-sm md:text-lg lg:text-xl">Web developer</p>
               </div>
-              <div className="flex items-center text-[#060606] space-x-1 lg:space-x-2">
+              <div className="flex items-center text-cursed-black space-x-1 lg:space-x-2">
                 <AiOutlineMobile className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
                 <p className="text-sm md:text-lg lg:text-xl">App developer</p>
               </div>
@@ -56,8 +56,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-[#84329b] to-[#8b60ed] md:h-40 md:-mt-16 lg:-mt-20 lg:hidden"></div>
-      <div className="w-full h-2 bg-gradient-to-r from-[#84329b] via-[#a65fec] to-[#8b60ed] hidden lg:block"></div>
+      <div className="w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-purple-dark to-purple-light md:h-40 md:-mt-16 lg:hidden"></div>
     </>
   );
 };

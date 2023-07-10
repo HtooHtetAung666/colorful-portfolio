@@ -62,18 +62,18 @@ export const Projects = () => {
       </h1>
 
       <Tab.Group>
-        <Tab.List className="w-full max-w-sm mx-auto lg:space-x-1 flex rounded-xl bg-[#060606]/20 p-1 mt-6 md:mt-10 lg:mt-14 mb-10 md:mb-14 lg:mb-16">
+        <Tab.List className="w-full max-w-sm mx-auto lg:space-x-1 flex rounded-xl bg-cursed-black/20 p-1 mt-6 md:mt-10 lg:mt-14 mb-10 md:mb-14 lg:mb-16">
           {Object.keys(projects).map((project) => (
             <Tab
               key={project}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-lg py-3 text-sm font-medium leading-5 text-[#060606] dark:text-[#dcf2ff]",
+                  "w-full rounded-lg py-3 text-sm font-medium leading-5 text-cursed-black dark:text-creator-light",
                   "text-sm md:text-md lg:text-lg",
-                  "ring-[#a65fec] ring-opacity-60 ring-offset-2 ring-offset-[#a65fec] focus:outline-none focus:ring-2",
+                  "ring-purple ring-opacity-60 ring-offset-2 ring-offset-purple focus:outline-none focus:ring-2",
                   selected
-                    ? "bg-[#feb47b] shadow"
-                    : "text-[#a65fec]/50 hover:bg-[#ff7e5f]/[0.12] hover:text-[#a65fec]"
+                    ? "bg-orange-light shadow"
+                    : "text-purple/50 hover:bg-[#ff7e5f]/[0.12] hover:text-purple"
                 )
               }
             >
@@ -107,10 +107,10 @@ export const Projects = () => {
                         data-aos="zoom-in-up"
                         data-aos-duration="3000"
                       >
-                        <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-[#a65fec]">
+                        <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-purple">
                           {product.name}
                         </h1>
-                        <p className="mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 text-[#a65fec]">
+                        <p className="mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 text-purple">
                           {product.description}
                         </p>
 
@@ -119,7 +119,7 @@ export const Projects = () => {
                             <a target="_blank">
                               <BsGithub
                                 size={28}
-                                className="hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-[#a65fec]"
+                                className="hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-purple"
                               />
                             </a>
                           </Link>
@@ -130,7 +130,7 @@ export const Projects = () => {
                             <a target="_blank">
                               <BsArrowUpRightSquare
                                 size={28}
-                                className="hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-[#a65fec]"
+                                className="hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-purple"
                               />
                             </a>
                           </Link>
