@@ -64,6 +64,7 @@ module.exports = {
         'react': '#61dbfb',
         'vue': '#41b883',
         'flutter': '#027dfd',
+        'red-laracast': '#f44881',
         'purple': {
           light: '#8b60ed',
           DEFAULT: '#a65fec',
