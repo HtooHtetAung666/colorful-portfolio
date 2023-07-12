@@ -42,7 +42,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-lg p-4 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 text-white hover:text-black">
                 Hobbies
               </li>
             </Link>
@@ -54,7 +54,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-lg p-4 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 text-white hover:text-black">
                 Projects
               </li>
             </Link>
@@ -66,7 +66,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-lg p-4 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 text-white hover:text-black">
                 Frameworks
               </li>
             </Link>
@@ -78,7 +78,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-lg p-4 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 text-white hover:text-black">
                 Contact
               </li>
             </Link>
@@ -87,7 +87,7 @@ export const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <li className="text-lg p-4 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 text-white hover:text-black">
                 Resume
               </li>
             </a>
