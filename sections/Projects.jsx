@@ -90,8 +90,8 @@ export const Projects = () => {
                     <div className="flex flex-col lg:flex-row lg:space-x-12 lg:px-14">
                       <div
                         className="lg:w-1/2"
-                        data-aos="flip-left"
-                        data-aos-duration="3000"
+                        data-aos="fade-right"
+                        data-aos-duration="2000"
                       >
                         <div className="md:px-20 md:py-0 lg:p-0">
                           <Image
@@ -104,8 +104,6 @@ export const Projects = () => {
                       </div>
                       <div
                         className="mt-4 text-center lg:text-left lg:mt-0 lg:w-1/2"
-                        data-aos="zoom-in-up"
-                        data-aos-duration="3000"
                       >
                         <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-purple">
                           {product.name}

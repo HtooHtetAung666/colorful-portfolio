@@ -10,7 +10,7 @@ export const Footer = () => {
           Code with
         </p>
         <div className="pt-4 pb-1">
-          <AiFillHeart className="w-6 h-6 md:w-7 md:h-7 text-flamingo" />
+          <AiFillHeart className="w-6 h-6 md:w-7 md:h-7 text-red-600" />
         </div>
       </div>
       <p className="text-center text-md text-creator-light px-4 pt-3 pb-4 mt-1 md:pb-4 md:text-lg lg:pt-0">
