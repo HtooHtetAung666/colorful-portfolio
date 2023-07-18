@@ -62,7 +62,7 @@ export const Projects = () => {
       </h1>
 
       <Tab.Group>
-        <Tab.List className="w-full max-w-sm mx-auto lg:space-x-1 flex rounded-xl bg-cursed-black/20 p-1 mt-6 md:mt-10 lg:mt-14 mb-10 md:mb-14 lg:mb-16">
+        <Tab.List className="w-full max-w-[12rem] md:max-w-[14rem] lg:max-w-[18rem] mx-auto lg:space-x-1 flex rounded-2xl bg-cursed-black/20 p-1 mt-6 md:mt-10 lg:mt-14 mb-10 md:mb-14 lg:mb-16">
           {Object.keys(projects).map((project) => (
             <Tab
               key={project}
@@ -72,8 +72,8 @@ export const Projects = () => {
                   "text-sm md:text-md lg:text-lg",
                   "ring-purple ring-opacity-60 ring-offset-2 ring-offset-purple focus:outline-none focus:ring-2",
                   selected
-                    ? "bg-orange-light shadow"
-                    : "text-purple/50 hover:bg-[#ff7e5f]/[0.12] hover:text-purple"
+                    ? "bg-orange-light dark:bg-orange-dark shadow rounded-xl lg:rounded-2xl"
+                    : "text-purple hover:bg-[#ff7e5f]/[0.12] rounded-xl lg:rounded-2xl hover:text-purple"
                 )
               }
             >
