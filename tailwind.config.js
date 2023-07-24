@@ -77,7 +77,7 @@ module.exports = {
         'cursed-black': '#060606',
         'creator-light': '#dcf2ff',
         'flamingo': '#fc8eac',
-        'pearl': '#ecf0f3',
+        'pearl': '#fffff0',
         'link': '#ecf0f3',
       },
     },

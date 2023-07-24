@@ -115,36 +115,36 @@ export const Navbar = () => {
       <div
         className={
           nav
-            ? "lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-slate-700/60"
+            ? "lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen"
             : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[80%] md:w-[70%] z-[100] min-h-screen bg-pearl py-5 px-6 ease-in duration-500"
+              ? "fixed left-0 top-0 w-full z-[100] min-h-screen bg-slate-800 py-5 px-6 ease-in duration-500"
               : "fixed left-[-100%] z-[100] min-h-screen top-0 py-5 px-6 ease-in duration-500"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
               <div className="text-flamingo">
-                <WiAlien size={76} />
+                <WiAlien size={70} />
               </div>
               <div
-                className="rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer"
+                className="rounded-full shadow-sm shadow-purple p-1 cursor-pointer"
                 onClick={handleNav}
               >
-                <FaTimes size={21} className="text-slate-800" />
+                <FaTimes size={21} className="text-pearl" />
               </div>
             </div>
-            <div className="border-b border-flamingo my-4">
-              <p className="w-[85%] md:w-[90%] py-4 text-slate-800">
+            <div className="border-b border-red-laracast my-4">
+              <p className="text-center py-4 text-pearl">
                 Always eager to build something new
               </p>
             </div>
           </div>
-          <div className="py-2 flex-col text-slate-800">
+          <div className="py-2 flex-col text-pearl text-center">
             <ul>
               <Link
                 activeClass="active"

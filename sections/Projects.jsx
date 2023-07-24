@@ -49,7 +49,9 @@ export const Projects = () => {
   });
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   }, []);
 
   return (
