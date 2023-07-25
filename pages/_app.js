@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider enableSystem={false} attribute="class">
       <Head>
-        <title>HHA</title>
+        <title>htoo htet</title>
       </Head>
       <Component {...pageProps} />
     </ThemeProvider>
