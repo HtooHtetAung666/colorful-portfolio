@@ -9,9 +9,9 @@ export const HeroSection = () => {
     <>
       <div
         id="herosection"
-        className="w-full h-full text-center bg-gradient-to-r from-purple-dark to-purple-light"
+        className="w-full h-full bg-gradient-to-r from-purple-dark to-purple-light text-center"
       >
-        <div className="px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60">
+        <div className="px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60 3xl:px-80">
           <div className="space-y-8 xl:space-y-10">
             <div className="flex items-center space-x-2 justify-center lg:space-x-4 lg:justify-start">
               <h1 className="text-cursed-black font-bold text-xl md:text-2xl lg:text-4xl">
@@ -56,8 +56,8 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-purple-dark to-purple-light md:h-40 md:-mt-16 lg:hidden"></div>
-      <div className="w-full h-2  hidden lg:block bg-gradient-to-r from-purple-dark via-red-laracast to-purple-light"></div>
+      <div className="w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-purple-dark to-purple-light md:h-40 md:-mt-20 3xl:hidden"></div>
+      <div className="w-full h-3 hidden 3xl:block bg-gradient-to-r from-purple-dark via-red-laracast to-purple-light"></div>
     </>
   );
 };

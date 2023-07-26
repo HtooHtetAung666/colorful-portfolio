@@ -26,7 +26,7 @@ export const Skills = () => {
             data-aos-once="true"
           >
             <svg
-              className="w-14 h-14 lg:w-16 lg:h-16"
+              className="w-14 h-14 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               x="0px"
@@ -76,7 +76,7 @@ export const Skills = () => {
             data-aos-duration="2000"
             data-aos-once="true"
           >
-            <FaReact className="w-14 h-14 lg:w-16 lg:h-16 text-react" />
+            <FaReact className="w-14 h-14 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20 text-react" />
             <p className="text-react text-center md:text-lg lg:text-xl">
               React
             </p>
@@ -89,7 +89,7 @@ export const Skills = () => {
             data-aos-once="true"
           >
             <svg
-              className="w-14 h-14 lg:w-16 lg:h-16"
+              className="w-14 h-14 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 261.76 226.69"
             >
@@ -114,7 +114,7 @@ export const Skills = () => {
             data-aos-once="true"
           >
             <svg
-              className="w-14 h-14 lg:w-16 lg:h-16"
+              className="w-14 h-14 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 48 48"
             >

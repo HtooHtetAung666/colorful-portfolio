@@ -12,7 +12,7 @@ const Hobbies = () => {
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute top-0 left-0 w-24 h-24 mt-6 ml-2 md:w-28 md:h-28 md:-mt-0 md:ml-10 lg:w-44 lg:h-44 lg:ml-16"
+          className="absolute top-0 left-0 w-24 h-24 mt-6 ml-2 md:w-28 md:h-28 md:-mt-0 md:ml-10 lg:w-40 lg:h-40 lg:ml-16 3xl:w-44 3xl 3xl:h-44"
         >
           <path
             fill="#60a5fa"
@@ -27,8 +27,8 @@ const Hobbies = () => {
 
         <div className="my-16 grid gap-12 md:mx-24 md:mt-24 md:grid-cols-3 lg:mt-32 lg:mx-30 xl:mx-60">
           <div className="mx-auto space-y-4">
-            <div className="inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-indigo-200 lg:w-16 lg:h-16">
-              <IoCodeSlash className="w-6 h-6 text-indigo-500 lg:w-8 lg:h-8" />
+            <div className="inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-indigo-200 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20">
+              <IoCodeSlash className="w-6 h-6 text-indigo-500 lg:w-8 lg:h-8 3xl:w-10 3xl:h-10" />
             </div>
             <p className="text-indigo-500 text-center md:text-lg lg:text-xl">
               Coding
@@ -36,10 +36,10 @@ const Hobbies = () => {
           </div>
 
           <div className="mx-auto space-y-4">
-            <div className="inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-red-200 lg:w-16 lg:h-16">
-              <IoGameControllerOutline className="w-6 h-6 text-red-500 lg:w-8 lg:h-8" />
+            <div className="inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-pink-200 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20">
+              <IoGameControllerOutline className="w-6 h-6 text-pink-500 lg:w-8 lg:h-8 3xl:w-10 3xl:h-10" />
             </div>
-            <p className="text-red-500 text-center text-md md:text-lg lg:text-xl">
+            <p className="text-pink-500 text-center text-md md:text-lg lg:text-xl">
               Gaming
             </p>
           </div>
@@ -47,7 +47,7 @@ const Hobbies = () => {
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute top-0 right-0 w-24 h-24 mt-48 mr-2 md:mt-10 md:w-28 md:h-28 md:mr-10 lg:w-44 lg:h-44 lg:mr-8"
+            className="absolute top-0 right-0 w-24 h-24 mt-48 mr-2 md:mt-10 md:w-28 md:h-28 md:mr-10 lg:w-40 lg:h-40 lg:mr-8 3xl:w-44 3xl:h-44"
           >
             <path
               fill="#9ca3af"
@@ -57,8 +57,8 @@ const Hobbies = () => {
           </svg>
 
           <div className="mx-auto space-y-4">
-            <div className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-gray-200 w-14 h-14 lg:w-16 lg:h-16">
-              <FaMusic className="text-gray-500 w-6 h-6 lg:w-8 lg:h-8" />
+            <div className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-gray-200 w-14 h-14 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20">
+              <FaMusic className="text-gray-500 w-6 h-6 lg:w-8 lg:h-8 3xl:w-10 3xl:h-10" />
             </div>
             <p className="text-gray-500 text-center text-md md:text-lg lg:text-xl">
               Music
@@ -69,10 +69,10 @@ const Hobbies = () => {
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-0 -mt-20 w-24 h-24 ml-3 md:w-32 md:h-32 md:mt-10 md:ml-44 lg:w-44 lg:h-48 lg:ml-96 lg:mt-16"
+          className="absolute left-0 -mt-20 w-24 h-24 ml-3 md:w-32 md:h-32 md:mt-10 md:ml-44 lg:w-40 lg:h-40 lg:ml-96 lg:mt-16 3xl:w-44 3xl:h-44"
         >
           <path
-            fill="#fb7185"
+            fill="#f472b6"
             d="M36.8,-60.7C42,-46.8,36.8,-28.5,44.3,-12.7C51.9,3.2,72.3,16.7,74.5,28.7C76.7,40.6,60.8,51.2,45.3,61C29.9,70.8,15,80,3,75.8C-8.9,71.6,-17.8,54.1,-31.1,43.6C-44.5,33.1,-62.3,29.6,-73.1,18.5C-83.8,7.5,-87.4,-11,-78.7,-21.8C-70,-32.5,-48.9,-35.5,-33.8,-46.1C-18.6,-56.7,-9.3,-75,3.2,-79.4C15.8,-83.9,31.5,-74.5,36.8,-60.7Z"
             transform="translate(100 100)"
           />

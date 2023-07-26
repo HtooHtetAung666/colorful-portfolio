@@ -114,15 +114,13 @@ export const Navbar = () => {
 
       <div
         className={
-          nav
-            ? "lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen"
-            : ""
+          nav ? "lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen" : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-full min-h-screen z-[100] bg-creator-light py-5 px-6 ease-in duration-500"
+              ? "fixed left-0 top-0 w-full min-h-screen z-[100] bg-pearl dark:bg-slate-800 py-5 px-6 ease-in duration-500"
               : "fixed left-[-100%] w-full min-h-screen z-[100] top-0 py-5 px-6 ease-in duration-500"
           }
         >
@@ -135,16 +133,16 @@ export const Navbar = () => {
                 className="rounded-full shadow-md shadow-purple p-1 cursor-pointer"
                 onClick={handleNav}
               >
-                <FaTimes size={21} className="text-cursed-black" />
+                <FaTimes size={21} className="text-black dark:text-white" />
               </div>
             </div>
             <div className="border-b border-red-laracast my-4">
-              <p className="text-center py-4 text-cursed-black">
+              <p className="text-center py-4 text-slate-800 dark:text-white">
                 Always eager to build something new
               </p>
             </div>
           </div>
-          <div className="py-2 flex-col text-cursed-black text-center">
+          <div className="py-2 flex-col text-slate-800 dark:text-pearl text-center">
             <ul>
               <Link
                 activeClass="active"
