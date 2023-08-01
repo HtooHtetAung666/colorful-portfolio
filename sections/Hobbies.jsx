@@ -69,7 +69,7 @@ const Hobbies = () => {
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-0 -mt-20 w-24 h-24 ml-3 md:w-32 md:h-32 md:mt-10 md:ml-44 lg:w-40 lg:h-40 lg:ml-96 lg:mt-16 3xl:w-44 3xl:h-44"
+          className="absolute left-0 -mt-20 w-24 h-24 ml-3 md:w-32 md:h-32 md:mt-10 md:ml-44 lg:w-40 lg:h-40 lg:ml-96 lg:mt-16 3xl:w-44 3xl:h-44 3xl:ml-[30rem]"
         >
           <path
             fill="#f472b6"

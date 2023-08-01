@@ -28,7 +28,7 @@ export const Navbar = () => {
       <div className="flex items-center justify-between w-full h-full pl-1 pr-2 pt-4 md:px-3 lg:pl-3 lg:pr-12 lg:py-12">
         {/* logo */}
         <div className="text-flamingo">
-          <WiAlien className="w-16 h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-2" />
+          <WiAlien className="w-16 h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-3" />
         </div>
 
         {/* Navigation */}
@@ -42,7 +42,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest p-5 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
                 Hobbies
               </li>
             </Link>
@@ -54,7 +54,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest p-5 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
                 Projects
               </li>
             </Link>
@@ -66,7 +66,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest p-5 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
                 Frameworks
               </li>
             </Link>
@@ -78,7 +78,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest p-5 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
                 Contact
               </li>
             </Link>
@@ -87,7 +87,7 @@ export const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <li className="text-md tracking-widest p-5 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
                 Resume
               </li>
             </a>
@@ -101,7 +101,7 @@ export const Navbar = () => {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               defaultChecked={theme === "dark"}
             />
-            <div className="w-11 h-6 bg-pearl ring-1 ring-flamingo rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-pearl after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"></div>
+            <div className="w-11 h-6 bg-slate-50 ring-1 ring-flamingo rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-slate-50 after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"></div>
           </label>
 
           <button className="rounded-sm lg:hidden" onClick={handleNav}>
@@ -120,7 +120,7 @@ export const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-full min-h-screen z-[100] bg-pearl dark:bg-slate-800 py-5 px-6 ease-in duration-500"
+              ? "fixed left-0 top-0 w-full min-h-screen z-[100] bg-slate-50 dark:bg-slate-800 py-5 px-6 ease-in duration-500"
               : "fixed left-[-100%] w-full min-h-screen z-[100] top-0 py-5 px-6 ease-in duration-500"
           }
         >
@@ -137,12 +137,12 @@ export const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-red-laracast my-4">
-              <p className="text-center py-4 text-slate-800 dark:text-white">
+              <p className="text-center py-4 text-slate-800 dark:text-slate-50">
                 Always eager to build something new
               </p>
             </div>
           </div>
-          <div className="py-2 flex-col text-slate-800 dark:text-pearl text-center">
+          <div className="py-2 flex-col text-slate-800 dark:text-slate-50 text-center">
             <ul>
               <Link
                 activeClass="active"
