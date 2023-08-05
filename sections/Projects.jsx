@@ -92,7 +92,7 @@ export const Projects = () => {
                     <div className="flex flex-col lg:flex-row lg:space-x-12 lg:px-14">
                       <div
                         className="lg:w-1/2"
-                        data-aos="fade-right"
+                        data-aos="fade-up"
                         data-aos-duration="2000"
                       >
                         <div className="md:px-20 md:py-0 lg:p-0">
@@ -104,13 +104,11 @@ export const Projects = () => {
                           />
                         </div>
                       </div>
-                      <div
-                        className="mt-4 text-center lg:text-left lg:mt-0 lg:w-1/2"
-                      >
-                        <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-purple">
+                      <div className="mt-4 text-center lg:text-left lg:mt-0 lg:w-1/2">
+                        <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-orange-light dark:text-orange-dark">
                           {product.name}
                         </h1>
-                        <p className="mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 text-purple">
+                        <p className="mt-3 mb-3 md:mt-4 md:mb-4 lg:mt-6 text-sm md:text-md lg:text-lg leading-7 lg:mb-6 text-cursed-black dark:text-creator-light">
                           {product.description}
                         </p>
 
@@ -123,17 +121,19 @@ export const Projects = () => {
                               />
                             </a>
                           </Link>
-                          <Link
-                            href={product.link ? product.link : "404"}
-                            target="_blank"
-                          >
-                            <a target="_blank">
-                              <BsArrowUpRightSquare
-                                size={28}
-                                className="hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-purple"
-                              />
-                            </a>
-                          </Link>
+                          {!product.link ? null : (
+                            <Link
+                              href={product.link}
+                              target="_blank"
+                            >
+                              <a target="_blank">
+                                <BsArrowUpRightSquare
+                                  size={28}
+                                  className="hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-purple"
+                                />
+                              </a>
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </div>
