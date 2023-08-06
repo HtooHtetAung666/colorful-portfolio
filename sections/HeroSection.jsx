@@ -11,7 +11,7 @@ export const HeroSection = () => {
         id="herosection"
         className="w-full h-full bg-gradient-to-r from-purple-dark to-purple-light text-center"
       >
-        <div className="px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60 3xl:pl-28 3xl:py-40 3xl:pr-0 3xl:max-w-7xl 3xl:mx-auto">
+        <div className="px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60 3xl:px-0 3xl:py-40 3xl:max-w-7xl 3xl:mx-auto">
           <div className="space-y-8 xl:space-y-10">
             <div className="flex items-center space-x-2 justify-center lg:space-x-4 lg:justify-start">
               <h1 className="text-cursed-black font-bold text-xl md:text-2xl lg:text-4xl">
@@ -50,7 +50,7 @@ export const HeroSection = () => {
           </div>
           <img
             src="/assets/astronaut.svg"
-            className="mx-auto w-72 h-72 md:w-80 md:h-80 mt-4 md:mx-0 md:mt-0 lg:w-5/12 lg:h-5/12 animate-up"
+            className="mx-auto w-72 h-72 md:w-80 md:h-80 mt-4 md:mx-0 md:mt-0 lg:w-5/12 lg:h-5/12 3xl:w-96 animate-up"
             alt="astronaut"
           />
         </div>

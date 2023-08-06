@@ -35,6 +35,7 @@ export const Navbar = () => {
         <div className="flex items-center space-x-5 mr-3 md:space-x-6 md:mr-4 lg:mr-0 lg:space-x-0">
           <ul className="hidden lg:flex items-center p-4">
             <Link
+              className="p-5 3xl:p-7s"
               activeClass="active"
               to="hobbies"
               spy={true}
@@ -42,11 +43,12 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
+              <li className="text-md tracking-widest text-white hover:text-black">
                 Hobbies
               </li>
             </Link>
             <Link
+              className="p-5 3xl:p-7"
               activeClass="active"
               to="projects"
               spy={true}
@@ -54,11 +56,12 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
+              <li className="text-md tracking-widest text-white hover:text-black">
                 Projects
               </li>
             </Link>
             <Link
+              className="p-5 3xl:p-7"
               activeClass="active"
               to="skills"
               spy={true}
@@ -66,11 +69,12 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
+              <li className="text-md tracking-widest text-white hover:text-black">
                 Frameworks
               </li>
             </Link>
             <Link
+              className="p-5 3xl:p-7"
               activeClass="active"
               to="contact"
               spy={true}
@@ -78,7 +82,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
+              <li className="text-md tracking-widest text-white hover:text-black">
                 Contact
               </li>
             </Link>
