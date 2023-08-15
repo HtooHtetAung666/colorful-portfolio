@@ -9,7 +9,7 @@ export const HeroSection = () => {
     <>
       <div
         id="herosection"
-        className="w-full h-full bg-gradient-to-r from-purple-dark to-purple-light text-center"
+        className="w-full h-full bg-gradient-to-r from-purple-dark dark:from-gray-700 to-purple-light dark:to-gray-600 text-center"
       >
         <div className="px-0 pt-16 pb-8 items-center space-y-10 md:space-y-0 md:flex md:px-10 md:pt-20 md:pb-10 md:justify-between lg:px-32 lg:py-36 xl:px-60 3xl:px-0 3xl:py-40 3xl:max-w-7xl 3xl:mx-auto">
           <div className="space-y-8 xl:space-y-10">
@@ -56,8 +56,8 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-purple-dark to-purple-light md:h-40 md:-mt-20 3xl:hidden"></div>
-      <div className="w-full h-3 hidden 3xl:block bg-gradient-to-r from-purple-dark via-red-laracast to-purple-light"></div>
+      <div className="w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-purple-dark dark:from-gray-700 to-purple-light dark:to-gray-600 md:h-40 md:-mt-20 3xl:hidden"></div>
+      <div className="w-full h-3 hidden 3xl:block bg-gradient-to-r from-purple-dark dark:from-gray-700 via-red-laracast to-purple-light dark:to-gray-600"></div>
     </>
   );
 };

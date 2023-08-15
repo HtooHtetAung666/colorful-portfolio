@@ -4,7 +4,7 @@ import { AiFillHeart } from "react-icons/ai";
 
 export const Footer = () => {
   return (
-    <div className="mt-16 rounded-tl-3xl lg:rounded-tl-full bg-gradient-to-r from-purple-dark to-purple-light items-center justify-center py-2 lg:space-y-4">
+    <div className="mt-16 rounded-tl-3xl lg:rounded-tl-full bg-gradient-to-r from-purple-dark dark:from-gray-700 to-purple-light dark:to-gray-600 items-center justify-center py-2 lg:space-y-4">
       <div className="flex items-center justify-center">
         <p className="text-center text-md px-4 pt-4 pb-1 text-creator-light tracking-wide md:pt-4 md:text-lg">
           Code with
