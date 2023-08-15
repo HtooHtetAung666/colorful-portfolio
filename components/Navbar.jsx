@@ -24,10 +24,10 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-16 bg-gradient-to-r from-purple-dark dark:from-gray-700 to-purple-light dark:to-gray-600">
+    <div className="w-full h-16 bg-gradient-to-r from-purple-dark dark:from-slate-700 to-purple-light dark:to-slate-600">
       <div className="flex items-center justify-between w-full h-full pl-1 pr-2 pt-4 md:px-3 lg:pl-3 lg:pr-12 lg:py-12">
         {/* logo */}
-        <div className="text-flamingo dark:text-flamingo/80">
+        <div className="text-flamingo">
           <WiAlien className="w-16 h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-3" />
         </div>
 
