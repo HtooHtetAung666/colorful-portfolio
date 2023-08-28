@@ -57,7 +57,7 @@ export const HeroSection = () => {
       </div>
 
       <div className="w-full h-24 skew-y-6 transform -mt-10 bg-gradient-to-r from-purple-dark dark:from-slate-700 to-purple-light dark:to-slate-600 md:h-40 md:-mt-20 3xl:hidden"></div>
-      <div className="w-full h-3 hidden 3xl:block bg-gradient-to-r from-purple-dark dark:from-slate-700 via-red-laracast dark:via-red-laracast to-purple-light dark:to-slate-600"></div>
+      <div className="w-full h-2 hidden 3xl:block bg-gradient-to-r from-purple-dark dark:from-slate-700 via-purple-dark dark:via-red-laracast to-purple-light dark:to-slate-600"></div>
     </>
   );
 };

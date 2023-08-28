@@ -125,14 +125,16 @@ export const Projects = () => {
                           data-aos="fade-up"
                           data-aos-duration="3000"
                         >
-                          <Link href={product.github}>
-                            <a target="_blank">
-                              <BsGithub
-                                size={28}
-                                className="hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-purple"
-                              />
-                            </a>
-                          </Link>
+                          {!product.github ? null : (
+                            <Link href={product.github}>
+                              <a target="_blank">
+                                <BsGithub
+                                  size={28}
+                                  className="hover:-translate-y-1 transition-transform cursor-pointer dark:contrast-110 text-purple"
+                                />
+                              </a>
+                            </Link>
+                          )}
                           {!product.link ? null : (
                             <Link href={product.link} target="_blank">
                               <a target="_blank">
