@@ -104,9 +104,9 @@ export const Projects = () => {
                           />
                         </div>
                       </div>
-                      <div className="mt-4 text-center lg:text-left lg:mt-0 lg:w-1/2">
+                      <div className="pt-4 text-center md:px-10 md:pt-10 lg:w-1/2">
                         <h1
-                          className="text-lg md:text-xl lg:text-2xl font-bold text-orange-light dark:text-orange-dark"
+                          className="text-lg md:text-xl lg:text-2xl font-bold text-cursed-black dark:text-creator-light"
                           data-aos="fade-up"
                           data-aos-duration="2000"
                         >
@@ -121,7 +121,7 @@ export const Projects = () => {
                         </p>
 
                         <div
-                          className="flex flex-row justify-center lg:justify-start align-bottom space-x-4"
+                          className="flex flex-row justify-center align-bottom space-x-4"
                           data-aos="fade-up"
                           data-aos-duration="3000"
                         >
