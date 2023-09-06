@@ -131,13 +131,13 @@ export const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <div className="text-flamingo">
-                <WiAlien size={70} />
+                <WiAlien size={57} />
               </div>
               <div
                 className="rounded-full shadow-md shadow-purple p-1 cursor-pointer"
                 onClick={handleNav}
               >
-                <FaTimes size={21} className="text-black dark:text-white" />
+                <FaTimes size={21} className="text-black" />
               </div>
             </div>
             <div className="border-b border-red-laracast my-4">
