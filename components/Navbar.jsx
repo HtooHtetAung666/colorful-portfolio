@@ -26,6 +26,17 @@ export const Navbar = () => {
   return (
     <div className="w-full h-16 bg-gradient-to-r from-purple-dark dark:from-slate-700 to-purple-light dark:to-slate-600">
       <div className="flex items-center justify-between w-full h-full pl-1 pr-2 pt-4 md:px-3 lg:pl-3 lg:pr-12 lg:py-12">
+        <label className="relative inline-flex items-center cursor-pointer ml-2 lg:hidden">
+          <input
+            type="checkbox"
+            className="sr-only peer"
+            value={theme}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            defaultChecked={theme === "dark"}
+          />
+          <div className="w-11 h-6 bg-slate-50 ring-1 ring-flamingo rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-slate-50 after:white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"></div>
+        </label>
+
         {/* logo */}
         <div className="text-flamingo">
           <WiAlien className="w-16 h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-3" />
@@ -97,7 +108,7 @@ export const Navbar = () => {
             </a>
           </ul>
 
-          <label className="relative inline-flex items-center cursor-pointer">
+          <label className="relative hidden items-center cursor-pointer lg:inline-flex">
             <input
               type="checkbox"
               className="sr-only peer"
