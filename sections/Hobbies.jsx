@@ -21,7 +21,7 @@ const Hobbies = () => {
           />
         </svg>
 
-        <h1 className="text-center tracking-widest text-black dark:text-white text-xl md:text-2xl lg:text-3xl font-bold">
+        <h1 className="text-center tracking-widest text-cursed-black dark:text-creator-light text-xl md:text-2xl lg:text-3xl font-bold">
           Hobbies
         </h1>
 

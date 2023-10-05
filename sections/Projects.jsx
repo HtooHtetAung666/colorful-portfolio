@@ -59,7 +59,7 @@ export const Projects = () => {
       id="projects"
       className="w-full p-10 md:p-8 lg:p-16 md:mt-64 md:mb-24 lg:mt-0 lg:mb-0 lg:min-h-screen"
     >
-      <h1 className="text-center tracking-widest text-black dark:text-white text-xl md:text-2xl lg:text-3xl font-bold">
+      <h1 className="text-center tracking-widest text-cursed-black dark:text-creator-light text-xl md:text-2xl lg:text-3xl font-bold">
         Projects
       </h1>
 

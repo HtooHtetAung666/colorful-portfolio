@@ -14,7 +14,7 @@ export const Skills = () => {
       className="w-full h-full my-16 p-4 md:mt-16 md:mb-64 md:pt-28"
     >
       <div className="mx-auto flex flex-col justify-center">
-        <h1 className="text-center tracking-widest text-black dark:text-white text-xl md:text-2xl lg:text-3xl font-bold">
+        <h1 className="text-center tracking-widest text-cursed-black dark:text-creator-light text-xl md:text-2xl lg:text-3xl font-bold">
           Frameworks
         </h1>
 

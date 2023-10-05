@@ -74,6 +74,10 @@ module.exports = {
           light: '#feb47b',
           dark: '#ff7e5f'
         },
+        'rhino': {
+          light: '#26184c',
+          dark: '#13093c',
+        },
         'cursed-black': '#060606',
         'creator-light': '#dcf2ff',
         'flamingo': '#fc8eac',

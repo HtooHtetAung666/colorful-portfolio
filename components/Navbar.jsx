@@ -24,10 +24,10 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-16 bg-gradient-to-r from-purple-dark dark:from-slate-700 to-purple-light dark:to-slate-600">
+    <div className="w-full h-16 bg-gradient-to-r from-purple-dark dark:from-rhino-dark to-purple-light dark:to-rhino-light">
       <div className="flex items-center justify-between w-full h-full pl-1 pr-2 pt-4 md:px-3 lg:pl-3 lg:pr-12 lg:py-12">
         {/* logo */}
-        <div className="text-flamingo">
+        <div className="text-black">
           <WiAlien className="w-16 h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-3" />
         </div>
 
@@ -43,7 +43,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest text-white hover:text-black">
+              <li className="text-md tracking-widest text-white hover:text-white/80">
                 Hobbies
               </li>
             </Link>
@@ -56,7 +56,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest text-white hover:text-black">
+              <li className="text-md tracking-widest text-white hover:text-white/80">
                 Projects
               </li>
             </Link>
@@ -69,7 +69,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest text-white hover:text-black">
+              <li className="text-md tracking-widest text-white hover:text-white/80">
                 Frameworks
               </li>
             </Link>
@@ -82,7 +82,7 @@ export const Navbar = () => {
               offset={0}
               duration={600}
             >
-              <li className="text-md tracking-widest text-white hover:text-black">
+              <li className="text-md tracking-widest text-white hover:text-white/80">
                 Contact
               </li>
             </Link>
@@ -91,7 +91,7 @@ export const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-black">
+              <li className="text-md tracking-widest p-5 3xl:p-7 text-white hover:text-white/80">
                 Resume
               </li>
             </a>
@@ -130,7 +130,7 @@ export const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <div className="text-flamingo">
+              <div className="text-black">
                 <WiAlien size={57} />
               </div>
               <div
