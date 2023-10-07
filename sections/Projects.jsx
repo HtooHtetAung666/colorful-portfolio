@@ -35,6 +35,15 @@ export const Projects = () => {
         github: "https://github.com/HtooHtetAung666/technical-blog",
         link: "",
       },
+      {
+        id: 3,
+        name: "Ecommerce",
+        description:
+          "Demo frontend web application for ecommerce build with react js and tailwind css.",
+        image: "/assets/projects/ecommerce.png",
+        github: "https://github.com/HtooHtetAung666/react-ecommerce-demo",
+        link: "https://react-ecommerce-demo-5d37c.web.app/",
+      },
     ],
     Mobile: [
       {
@@ -100,7 +109,8 @@ export const Projects = () => {
                             src={product.image}
                             width={800}
                             height={400}
-                            className="rounded-xl shadow-xl hover:opacity-70"
+                            className="rounded-none
+                             shadow-xl hover:opacity-70"
                           />
                         </div>
                       </div>
