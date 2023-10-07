@@ -75,7 +75,7 @@ export const Projects = () => {
                   "ring-purple ring-opacity-60 ring-offset-2 ring-offset-purple focus:outline-none focus:ring-2",
                   selected
                     ? "bg-orange-light dark:bg-orange-dark shadow rounded-xl lg:rounded-2xl"
-                    : "text-purple hover:bg-[#ff7e5f]/[0.12] rounded-xl lg:rounded-2xl hover:text-purple"
+                    : "text-purple dark:text-purple hover:bg-[#ff7e5f]/[0.12] rounded-xl lg:rounded-2xl"
                 )
               }
             >

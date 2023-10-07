@@ -109,7 +109,7 @@ export const Navbar = () => {
           </label>
 
           <button className="rounded-sm lg:hidden" onClick={handleNav}>
-            <FaBars size={21} className="text-black" />
+            <FaBars size={21} className="text-flamingo" />
           </button>
         </div>
       </div>
@@ -137,10 +137,10 @@ export const Navbar = () => {
                 className="rounded-full shadow-md shadow-purple p-1 cursor-pointer"
                 onClick={handleNav}
               >
-                <FaTimes size={21} className="text-black" />
+                <FaTimes size={21} className="text-flamingo" />
               </div>
             </div>
-            <div className="border-b border-red-laracast my-4">
+            <div className="border-b border-flamingo my-4">
               <p className="text-center py-4 text-slate-800 dark:text-slate-50">
                 Always eager to build something new
               </p>
