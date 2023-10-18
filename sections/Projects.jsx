@@ -23,6 +23,7 @@ export const Projects = () => {
         description:
           "Web app built with vue js and firebase where you can chat with friends.",
         image: "/assets/projects/chatRoom.jpg",
+        imageRotate: true,
         github: "https://github.com/HtooHtetAung666/chat-room",
         link: "https://chat-room-bce12.web.app/",
       },
@@ -32,6 +33,7 @@ export const Projects = () => {
         description:
           "Web app built with laravel and bootstrap where you can read blogs about information technology.",
         image: "/assets/projects/technicalBlog.png",
+        imageRotate: false,
         github: "https://github.com/HtooHtetAung666/technical-blog",
         link: "",
       },
@@ -41,6 +43,7 @@ export const Projects = () => {
         description:
           "Demo frontend web application for ecommerce build with react js and tailwind css.",
         image: "/assets/projects/ecommerce.png",
+        imageRotate: true,
         github: "https://github.com/HtooHtetAung666/react-ecommerce-demo",
         link: "https://react-ecommerce-demo-5d37c.web.app/",
       },
@@ -51,6 +54,7 @@ export const Projects = () => {
         name: "Comming Soon",
         description: "I am working on it xD",
         image: "/assets/projects/blur.jpg",
+        imageRotate: true,
         github: "",
         link: "",
       },
@@ -109,7 +113,7 @@ export const Projects = () => {
                             src={product.image}
                             width={800}
                             height={400}
-                            className="rounded-none
+                            className="rounded-md
                              shadow-xl hover:opacity-70"
                           />
                         </div>
