@@ -13,7 +13,7 @@ export const Contact = () => {
 
         <div className='relative space-y-4 md:m-7 lg:m-0'>
 
-          <div className='py-5 px-4 bg-creator-light shadow-md shadow-purple-300 md:shadow-none rounded-lg flex items-center justify-start space-x-8 md:justify-between'>
+          <div className='py-5 px-4 bg-white shadow-md shadow-purple-300 md:shadow-none rounded-lg flex items-center justify-start space-x-8 md:justify-between'>
             <div className='flex items-center space-x-2'>
               <AiOutlineInfoCircle className='w-6 h-6 text-purple-400 md:w-8 md:h-8'/>
               <p className='text-purple-400 text-md md:text-lg lg:text-xl'>Contact Info</p>
@@ -21,7 +21,7 @@ export const Contact = () => {
             <div className='hidden w-40 h-6 rounded-lg bg-purple-300 md:block'></div>
           </div>
 
-          <div className='py-5 px-4 bg-creator-light shadow-md shadow-yellow-300 md:shadow-none rounded-lg flex items-center justify-start space-x-8 md:justify-between'>
+          <div className='py-5 px-4 bg-white shadow-md shadow-yellow-300 md:shadow-none rounded-lg flex items-center justify-start space-x-8 md:justify-between'>
             <div className='flex items-center space-x-2'>
               <AiOutlinePhone className='h-6 w-6 text-yellow-400 md:w-8 md:h-8'/>
               <p className='text-yellow-400 text-md md:text-lg lg:text-xl'>09-43202950</p>
@@ -29,7 +29,7 @@ export const Contact = () => {
             <div className='hidden w-36 h-6 rounded-lg bg-yellow-300 md:block'></div>
           </div>
 
-          <div className='py-5 px-4 bg-creator-light shadow-md shadow-pink-300 md:shadow-none rounded-lg flex items-center justify-start space-x-8 md:justify-between'>
+          <div className='py-5 px-4 bg-white shadow-md shadow-pink-300 md:shadow-none rounded-lg flex items-center justify-start space-x-8 md:justify-between'>
             <div className='flex items-center space-x-2'>
               <AiOutlineMail className='h-6 w-6 text-pink-400 md:w-8 md:h-8'/>
               <p className='text-pink-400 text-md md:text-lg lg:text-xl'>hhawork039@gmail</p>
