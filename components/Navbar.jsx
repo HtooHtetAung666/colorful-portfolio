@@ -118,14 +118,14 @@ export const Navbar = () => {
 
       <div
         className={
-          nav ? "lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen" : ""
+          nav ? "lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-black/60" : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[90%] md:w-[80%] min-h-screen z-[100] bg-slate-50 dark:bg-slate-800 py-5 px-6 ease-in duration-500"
-              : "fixed left-[-100%] w-[90%] md:w-[80%] min-h-screen z-[100] top-0 py-5 px-6 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[85%] md:w-[90%] min-h-screen z-[100] bg-slate-50 dark:bg-slate-800 py-5 px-6 ease-in duration-500"
+              : "fixed left-[-100%] w-[85%] md:w-[90%] min-h-screen z-[100] top-0 py-5 px-6 ease-in duration-500"
           }
         >
           <div>
