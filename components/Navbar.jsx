@@ -28,7 +28,7 @@ export const Navbar = () => {
       <div className="flex items-center justify-between w-full h-full pl-1 pr-2 pt-4 md:px-3 lg:pl-3 lg:pr-12 lg:py-12">
         {/* logo */}
         <div className="text-black">
-          <WiAlien className="w-16 h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-3" />
+          <WiAlien className="w-14 h-14 md:w-16 md:h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-3" />
         </div>
 
         {/* Navigation */}
@@ -109,7 +109,7 @@ export const Navbar = () => {
           </label>
 
           <button className="rounded-sm lg:hidden" onClick={handleNav}>
-            <FaBars size={21} className="text-flamingo" />
+            <FaBars size={20} className="text-flamingo" />
           </button>
         </div>
       </div>
@@ -118,7 +118,9 @@ export const Navbar = () => {
 
       <div
         className={
-          nav ? "lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-black/60" : ""
+          nav
+            ? "lg:hidden fixed z-[100] left-0 top-0 w-full min-h-screen bg-black/60"
+            : ""
         }
       >
         <div
@@ -130,14 +132,14 @@ export const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <div className="text-black">
-                <WiAlien size={57} />
+              <div>
+                <WiAlien size={50} className="text-black" />
               </div>
               <div
                 className="rounded-full shadow-md shadow-purple p-1 cursor-pointer"
                 onClick={handleNav}
               >
-                <FaTimes size={21} className="text-flamingo" />
+                <FaTimes size={20} className="text-flamingo" />
               </div>
             </div>
             <div className="border-b border-flamingo my-4">
