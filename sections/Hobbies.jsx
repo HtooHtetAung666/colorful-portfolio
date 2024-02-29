@@ -21,7 +21,7 @@ const Hobbies = () => {
           />
         </svg>
 
-        <h1 className="text-center tracking-widest text-cursed-black dark:text-creator-light text-xl md:text-2xl lg:text-3xl font-bold">
+        <h1 className="text-center tracking-widest text-cursed-black dark:text-creator-light text-xl md:text-2xl 3xl:text-3xl font-bold">
           Hobbies
         </h1>
 
@@ -30,7 +30,7 @@ const Hobbies = () => {
             <div className="inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-indigo-200 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20">
               <IoCodeSlash className="w-6 h-6 text-indigo-500 lg:w-8 lg:h-8 3xl:w-10 3xl:h-10" />
             </div>
-            <p className="text-indigo-500 text-center md:text-lg lg:text-xl">
+            <p className="text-indigo-500 tracking-tight 3xl:tracking-wide text-center md:text-lg lg:text-xl">
               Coding
             </p>
           </div>
@@ -39,7 +39,7 @@ const Hobbies = () => {
             <div className="inline-flex w-14 h-14 flex-shrink-0 items-center justify-center rounded-full bg-pink-200 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20">
               <IoGameControllerOutline className="w-6 h-6 text-pink-500 lg:w-8 lg:h-8 3xl:w-10 3xl:h-10" />
             </div>
-            <p className="text-pink-500 text-center text-md md:text-lg lg:text-xl">
+            <p className="text-pink-500 tracking-tight 3xl:tracking-wide text-center text-md md:text-lg lg:text-xl">
               Gaming
             </p>
           </div>
@@ -60,7 +60,7 @@ const Hobbies = () => {
             <div className="inline-flex flex-shrink-0 items-center justify-center rounded-full bg-gray-200 w-14 h-14 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20">
               <FaMusic className="text-gray-500 w-6 h-6 lg:w-8 lg:h-8 3xl:w-10 3xl:h-10" />
             </div>
-            <p className="text-gray-500 text-center text-md md:text-lg lg:text-xl">
+            <p className="text-gray-500 tracking-tight 3xl:tracking-wide text-center text-md md:text-lg lg:text-xl">
               Music
             </p>
           </div>

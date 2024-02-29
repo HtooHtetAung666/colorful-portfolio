@@ -14,7 +14,7 @@ export const Skills = () => {
       className="w-full h-full my-16 p-4 md:mt-16 md:mb-64 md:pt-28"
     >
       <div className="mx-auto flex flex-col justify-center">
-        <h1 className="text-center tracking-widest text-cursed-black dark:text-creator-light text-xl md:text-2xl lg:text-3xl font-bold">
+        <h1 className="text-center tracking-widest text-cursed-black dark:text-creator-light text-xl md:text-2xl 3xl:text-3xl font-bold">
           Frameworks
         </h1>
 
@@ -65,7 +65,7 @@ export const Skills = () => {
                 ></path>
               </g>
             </svg>
-            <p className="text-laravel text-center md:text-lg lg:text-xl">
+            <p className="text-laravel tracking-tight 3xl:tracking-wide text-center md:text-lg lg:text-xl">
               Laravel
             </p>
           </div>
@@ -77,7 +77,7 @@ export const Skills = () => {
             data-aos-once="true"
           >
             <FaReact className="w-14 h-14 lg:w-16 lg:h-16 3xl:w-20 3xl:h-20 text-react" />
-            <p className="text-react text-center md:text-lg lg:text-xl">
+            <p className="text-react tracking-tight 3xl:tracking-wide text-center md:text-lg lg:text-xl">
               React
             </p>
           </div>
@@ -102,7 +102,7 @@ export const Skills = () => {
                 fill="#34495e"
               ></path>
             </svg>
-            <p className="text-vue text-center md:text-lg lg:text-xl">
+            <p className="text-vue tracking-tight 3xl:tracking-wide text-center md:text-lg lg:text-xl">
               Vue
             </p>
           </div>
@@ -152,7 +152,7 @@ export const Skills = () => {
                 transform="rotate(-45.001 20 33)"
               ></rect>
             </svg>
-            <p className="text-flutter text-center md:text-lg lg:text-xl">
+            <p className="text-flutter tracking-tight 3xl:tracking-wide text-center md:text-lg lg:text-xl">
               Flutter
             </p>
           </div>
