@@ -25,10 +25,10 @@ export const Navbar = () => {
 
   return (
     <div className="w-full h-16 bg-gradient-to-r from-purple-dark dark:from-rhino-dark to-purple-light dark:to-rhino-light">
-      <div className="flex items-center justify-between w-full h-full pl-1 pr-2 pt-4 md:px-3 lg:pl-3 lg:pr-12 lg:py-14">
+      <div className="flex items-center justify-between w-full h-full pl-1 pr-2 pt-3 md:px-3 lg:pl-3 lg:pr-12 lg:py-14">
         {/* logo */}
         <div className="text-black">
-          <WiAlien className="w-14 h-14 md:w-16 md:h-16 p-1 md:p-0 lg:w-20 lg:h-20 lg:p-3" />
+          <WiAlien className="w-14 h-14 md:w-16 md:h-16 p-1 lg:w-20 lg:h-20 lg:p-3" />
         </div>
 
         {/* Navigation */}
